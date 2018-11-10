@@ -32,7 +32,7 @@ namespace DemoApp.ViewModel
       get;
       protected set;
     }
-    public virtual string ControlPanelCommands
+    public virtual string ControlPanelCommandsText
     {
       get;
       protected set;
