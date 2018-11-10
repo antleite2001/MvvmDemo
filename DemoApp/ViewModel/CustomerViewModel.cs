@@ -163,7 +163,7 @@ namespace DemoApp.ViewModel
       }
     }
 
-    public override string DisplayPersonCompanyName
+    public override string DisplayName
     {
       get
       {

@@ -27,7 +27,7 @@ namespace DemoApp.ViewModel
     /// Child classes can set this property to a new value,
     /// or override it to determine the value on-demand.
     /// </summary>
-    public virtual string DisplayPersonCompanyName
+    public virtual string DisplayName
     {
       get;
       protected set;
@@ -128,7 +128,7 @@ namespace DemoApp.ViewModel
     /// </summary>
     ~ViewModelBase()
     {
-      string msg = string.Format("{0} ({1}) ({2}) Finalized", GetType().Name, DisplayPersonCompanyName, GetHashCode());
+      string msg = string.Format("{0} ({1}) ({2}) Finalized", GetType().Name, DisplayName, GetHashCode());
       try
       { Debug.WriteLine("(2) ~ViewModelBase(): " + msg); }
       catch (Exception ex)
