@@ -17,7 +17,7 @@ namespace DemoApp.ViewModel
             base.xDisplayName = displayName;
            
             this.Command = command;
-            Debug.WriteLine("%%%%%%%%%%%%%%%%%%% CommandViewModel: " + displayName +"  " + command.ToString());
+            Debug.WriteLine("(5) CommandViewModel: " + displayName +"  " + command.ToString());
         }
 
         public ICommand Command { get; private set; }

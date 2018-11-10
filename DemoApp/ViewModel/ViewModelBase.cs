@@ -117,7 +117,7 @@ namespace DemoApp.ViewModel
         ~ViewModelBase()
         {
             string msg = string.Format("{0} ({1}) ({2}) Finalized", this.GetType().Name, this.xDisplayName, this.GetHashCode());
-            System.Diagnostics.Debug.WriteLine("####################### "+msg);
+            System.Diagnostics.Debug.WriteLine("(2) "+msg);
         }
 #endif
 

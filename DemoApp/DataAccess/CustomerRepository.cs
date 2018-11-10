@@ -31,7 +31,7 @@ namespace DemoApp.DataAccess
         public CustomerRepository(string customerDataFile)
         {
             _customers = LoadCustomers(customerDataFile);
-            Debug.WriteLine("!!!!!!!!!!!!!!!!!!!!!!! "+_customers.Count.ToString());
+            Debug.WriteLine("(1) CustomerRepository(): "+_customers.Count.ToString());
         }
 
         #endregion // Constructor
