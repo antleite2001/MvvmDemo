@@ -59,7 +59,4 @@ C:\Users\ACVL\Documents\WPF\MvvmDemoAppJoshSmith\MvvmDemoAppVarian\DemoApp\obj\D
 C:\Users\ACVL\Documents\WPF\MvvmDemoAppJoshSmith\MvvmDemoAppVarian\DemoApp\obj\Debug\DemoApp.csproj.GenerateResource.cache
 C:\Users\ACVL\Documents\WPF\MvvmDemoAppJoshSmith\MvvmDemoAppVarian\DemoApp\obj\Debug\DemoApp.exe
 C:\Users\ACVL\Documents\WPF\MvvmDemoAppJoshSmith\MvvmDemoAppVarian\DemoApp\obj\Debug\DemoApp.pdb
-C:\Users\ACVL\Documents\WPF\MvvmDemoAppJoshSmith\MvvmDemoAppVarian\DemoApp\bin\Debug\DemoApp.exe.CodeAnalysisLog.xml
-C:\Users\ACVL\Documents\WPF\MvvmDemoAppJoshSmith\MvvmDemoAppVarian\DemoApp\bin\Debug\DemoApp.exe.lastcodeanalysissucceeded
 C:\Users\ACVL\Documents\WPF\MvvmDemoAppJoshSmith\MvvmDemoAppVarian\DemoApp\obj\Debug\DemoApp.csproj.CoreCompileInputs.cache
-C:\Users\ACVL\Documents\WPF\MvvmDemoAppJoshSmith\MvvmDemoAppVarian\DemoApp\obj\Debug\DemoApp.csprojAssemblyReference.cache

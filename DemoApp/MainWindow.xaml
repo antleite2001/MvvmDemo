@@ -9,7 +9,8 @@
   FontFamily="Verdana"
   MinWidth="650" MinHeight="420"
   
-  Title="{Binding xDisplayName, PresentationTraceSources.TraceLevel=High}"  
+  Title="{Binding DisplayName, 
+   PresentationTraceSources.TraceLevel=Medium}"  
   Width="900" Height="420"
   WindowStartupLocation="CenterScreen" Background="#FFA43434"
   >
@@ -23,7 +24,9 @@
     <DockPanel x:Name="docPanelMenu" DockPanel.Dock="Top" KeyboardNavigation.TabNavigation="None"  >
       <Menu x:Name="menu" KeyboardNavigation.TabNavigation="Cycle">
         <MenuItem Header="_File">
-          <MenuItem Header="E_xit" Command="{Binding CloseCommand, PresentationTraceSources.TraceLevel=High}" />
+          <MenuItem Header="E_xit" 
+                    Command="{Binding CloseCommand, 
+            PresentationTraceSources.TraceLevel=Medium}" d:IsLocked="True" />
         </MenuItem>
         <MenuItem Header="_Edit" />
         <MenuItem Header="_Options" />
@@ -40,43 +43,40 @@
         <ColumnDefinition x:Name="Buttons" Width="170" />
       </Grid.ColumnDefinitions>
 
-      <Border x:Name="borderControlPanel" Background="DodgerBlue" Margin="3"
+      <Border x:Name="borderControlPanel" 
+              Background="DodgerBlue" Margin="3"
         Grid.Column="0"
         Style="{StaticResource MainBorderStyle}" >
-          <HeaderedContentControl 
+        <HeaderedContentControl 
           x:Name="hccControlPanel" 
           Header="Control Panel"
-          Content="{Binding Commands, 
+          Content="{Binding ControlPanelCommands, 
           PresentationTraceSources.TraceLevel=High}"
-          ContentTemplate="{StaticResource CommandsTemplate}"
-          
-          Style="{StaticResource MainHCCStyle}"
-          />
+          ContentTemplate="{StaticResource CommandsTemplate}"          
+          Style="{StaticResource MainHCCStyle}"/>
       </Border>
 
-      <Border x:Name="borderWorkSpaces" Background="Aqua" Margin="3"
+      <Border x:Name="borderWorkSpaces" 
+              Background="Aqua" Margin="3"
         Grid.Column="2" 
         Style="{StaticResource MainBorderStyle}">
         <HeaderedContentControl 
           x:Name="hccWorkSpace" 
           Header="Workspaces"
-          Content="{Binding Workspaces, PresentationTraceSources.TraceLevel=High}"
+          Content="{Binding Workspaces, 
+           PresentationTraceSources.TraceLevel=Medium}"
           ContentTemplate="{StaticResource WorkspacesTemplate}"
-          
-          Style="{StaticResource MainHCCStyle}"
-          />
+          Style="{StaticResource MainHCCStyle}"/>
       </Border>
       <Border  x:Name="borderButtons" 
                Background="Bisque" Margin="3"
         Grid.Column="4" 
         Style="{StaticResource MainBorderStyle}">
-        <HeaderedContentControl x:Name="hccButtons" Header="Buttons"
+        <HeaderedContentControl x:Name="hccButtons" 
+                                Header="Buttons"
           Content="{Binding Workspaces, 
-          PresentationTraceSources.TraceLevel=High}"
-          ContentTemplate="{StaticResource ButtonsTemplate}"
-          
-          Style="{StaticResource MainHCCStyle}"
-          />
+          PresentationTraceSources.TraceLevel=Medium}"           
+          Style="{StaticResource MainHCCStyle}"/>
       </Border>
     </Grid>
   </DockPanel>

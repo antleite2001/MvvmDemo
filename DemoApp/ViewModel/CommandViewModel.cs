@@ -11,16 +11,21 @@ namespace DemoApp.ViewModel
   {
     public CommandViewModel(string displayName, ICommand command)
     {
+      System.Diagnostics.PresentationTraceSources.DataBindingSource.Switch.Level = System.Diagnostics.SourceLevels.Critical;
       if (command == null)
       {
         throw new ArgumentNullException("command");
       }
 
-      base.xDisplayName = displayName;
+      base.DisplayPersonCompanyName = displayName;
 
       Command = command;
+
+
       try
-      { Debug.WriteLine("(5) CommandViewModel: " + displayName + "  " + command.ToString()); }
+      {
+        Debug.WriteLine("(5) CommandViewModel: " + displayName + "  " + command.ToString());
+      }
       catch (Exception ex)
       {
         Debug.WriteLine("(5) CommandViewModel: " + ex.Message);

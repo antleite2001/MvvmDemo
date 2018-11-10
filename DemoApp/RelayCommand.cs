@@ -27,15 +27,19 @@ namespace DemoApp
     /// </summary>
     /// <param name="execute">The execution logic.</param>
     public RelayCommand(Action<object> execute) : this(execute, null)
-    {try
+    {
+      System.Diagnostics.PresentationTraceSources.DataBindingSource.Switch.Level = System.Diagnostics.SourceLevels.Critical;
+
+      try
       {
-      Debug.WriteLine("(4) RelayCommand(): " + execute.ToString() );}
+        Debug.WriteLine("(4) RelayCommand(): " + execute.ToString());
+      }
       catch (Exception ex)
       {
-        Debug.WriteLine("(4) RelayCommand(): "+ex.Message  );
-         
+        Debug.WriteLine("(4) RelayCommand(): " + ex.Message);
+
       }
-           
+
     }
 
     /// <summary>
@@ -45,23 +49,25 @@ namespace DemoApp
     /// <param name="canExecute">The execution status logic.</param>
     public RelayCommand(Action<object> execute, Predicate<object> canExecute)
     {
+      System.Diagnostics.PresentationTraceSources.DataBindingSource.Switch.Level = System.Diagnostics.SourceLevels.Critical;
+
       if (execute == null)
       {
         throw new ArgumentNullException("execute");
       }
 
       _execute = execute;
-       _canExecute = canExecute;
+      _canExecute = canExecute;
       try
       {
-Debug.WriteLine("(6) RelayCommand(): " + _execute.Method.ToString() + "  " + _execute.Target.ToString()   );
+        Debug.WriteLine("(6) RelayCommand(): " + _execute.Method.ToString() + "  " + _execute.Target.ToString());
       }
       catch (Exception ex)
       {
-        Debug.WriteLine("(6) RelayCommand(): "  +ex.Message );
-         
+        Debug.WriteLine("(6) RelayCommand(): " + ex.Message);
+
       }
-      
+
     }
 
     #endregion // Constructors
@@ -73,7 +79,7 @@ Debug.WriteLine("(6) RelayCommand(): " + _execute.Method.ToString() + "  " + _ex
     {
       return _canExecute == null ? true : _canExecute(parameter);
     }
-     
+
     public event EventHandler CanExecuteChanged
     {
       add { CommandManager.RequerySuggested += value; }

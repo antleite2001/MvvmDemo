@@ -135,7 +135,7 @@
   </data>
   <data name="CustomerViewModel_DisplayName" xml:space="preserve">
     <value>New Customer</value>
-    <comment>The display name of a new Customer object.</comment>
+    <comment>The display name of a new Customer object written in the TAB control.</comment>
   </data>
   <data name="CustomerViewModel_Error_MissingCustomerType" xml:space="preserve">
     <value>Customer type must be selected</value>
@@ -175,6 +175,10 @@
   </data>
   <data name="MainWindowViewModel_DisplayName" xml:space="preserve">
     <value>MVVM Demo App</value>
+    <comment>Title of the main window</comment>
+  </data>
+  <data name="MainWindowViewModel_Command_ExitButton" xml:space="preserve">
+    <value>EXIT BUTTON</value>
     <comment>Title of the main window</comment>
   </data>
 </root>

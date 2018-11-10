@@ -96,7 +96,7 @@ This resource dictionary is used by the MainWindow.
         <DataTemplate>
           <TextBlock Margin="2,6">
             <Hyperlink Command="{Binding Path=Command}">
-              <TextBlock Text="{Binding Path=xDisplayName}" />
+              <TextBlock Text="{Binding Path=DisplayName}" />
             </Hyperlink>
           </TextBlock>
         </DataTemplate>
@@ -112,7 +112,7 @@ This resource dictionary is used by the MainWindow.
     <DockPanel Width="120">
       <Button 
         Command="{Binding Path=CloseCommand}"
-        Content="zzzz"
+        Content="x"
         Cursor="Hand"
         DockPanel.Dock="Right"
         Focusable="False"
@@ -125,7 +125,7 @@ This resource dictionary is used by the MainWindow.
         Width="16" Height="16" 
         />
       <ContentPresenter 
-        Content="{Binding Path=xDisplayName}" 
+        Content="{Binding Path=DisplayName}" 
         VerticalAlignment="Center" 
         />
     </DockPanel>

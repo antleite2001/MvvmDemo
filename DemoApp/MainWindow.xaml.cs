@@ -8,8 +8,8 @@ namespace DemoApp
     public MainWindow()
     {
       InitializeComponent();
-      //PresentationTraceSources.DataBindingSource.Listeners.Add( new ConsoleTraceListener());
-      //PresentationTraceSources.DataBindingSource.Switch.Level = SourceLevels.All;
+      System.Diagnostics.PresentationTraceSources.DataBindingSource.Switch.Level = System.Diagnostics.SourceLevels.Critical;
+
     }
 
 
