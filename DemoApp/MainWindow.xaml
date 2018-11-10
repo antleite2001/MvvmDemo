@@ -52,7 +52,7 @@
           Header="Control Panel"
           Content="{Binding ControlPanelCommands, 
           PresentationTraceSources.TraceLevel=High}"
-          ContentTemplate="{StaticResource CommandsTemplate}"          
+          ContentTemplate="{StaticResource ControlPanelCommandsTemplate}"          
           Style="{StaticResource MainHCCStyle}"/>
       </Border>
 

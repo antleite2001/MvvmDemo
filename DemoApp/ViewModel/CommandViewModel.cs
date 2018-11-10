@@ -18,7 +18,7 @@ namespace DemoApp.ViewModel
       }
 
       base.DisplayName = displayName;
-
+      base.ControlPanelCommands= displayName;
       Command = command;
 
 

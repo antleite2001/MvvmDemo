@@ -32,7 +32,11 @@ namespace DemoApp.ViewModel
       get;
       protected set;
     }
-
+    public virtual string ControlPanelCommands
+    {
+      get;
+      protected set;
+    }
     #endregion // DisplayName
 
 
