@@ -32,7 +32,13 @@ namespace DemoApp.ViewModel
             base.xDisplayName = Strings.MainWindowViewModel_DisplayName;
       
             _customerRepository = new CustomerRepository(customerDataFile);
-            Debug.WriteLine("(7) MainWindowViewModel: " + base.xDisplayName + " " + _customerRepository.ToString());
+            try
+      {Debug.WriteLine("(7) MainWindowViewModel: " + base.xDisplayName + " " + _customerRepository.ToString());}
+      catch (Exception ex)
+      {
+        Debug.WriteLine("(7) MainWindowViewModel: "+ex.Message  );
+         
+      }
         }
 
         #endregion // Constructor

@@ -27,8 +27,14 @@ namespace DemoApp
     /// </summary>
     /// <param name="execute">The execution logic.</param>
     public RelayCommand(Action<object> execute) : this(execute, null)
-    {
-      Debug.WriteLine("(4) RelayCommand(): " + execute.ToString() );
+    {try
+      {
+      Debug.WriteLine("(4) RelayCommand(): " + execute.ToString() );}
+      catch (Exception ex)
+      {
+        Debug.WriteLine("(4) RelayCommand(): "+ex.Message  );
+         
+      }
            
     }
 
@@ -46,7 +52,16 @@ namespace DemoApp
 
       _execute = execute;
        _canExecute = canExecute;
-      Debug.WriteLine("(6) RelayCommand(): " + _execute.Method.ToString() + "  " + _execute.Target.ToString()  + "  " + _canExecute.Method.ToString());
+      try
+      {
+Debug.WriteLine("(6) RelayCommand(): " + _execute.Method.ToString() + "  " + _execute.Target.ToString()   );
+      }
+      catch (Exception ex)
+      {
+        Debug.WriteLine("(6) RelayCommand(): "  +ex.Message );
+         
+      }
+      
     }
 
     #endregion // Constructors
