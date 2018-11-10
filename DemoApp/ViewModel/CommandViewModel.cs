@@ -19,7 +19,7 @@ namespace DemoApp.ViewModel
 
       base.DisplayName = displayName;
       base.ControlPanelCommands= displayName;
-      Command = command;
+      ControlPanelCommandInvoked = command;
 
 
       try
@@ -33,6 +33,6 @@ namespace DemoApp.ViewModel
       }
     }
 
-    public ICommand Command { get; private set; }
+    public ICommand ControlPanelCommandInvoked { get; private set; }
   }
 }

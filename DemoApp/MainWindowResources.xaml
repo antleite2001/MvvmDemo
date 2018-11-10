@@ -95,7 +95,7 @@ This resource dictionary is used by the MainWindow.
       <ItemsControl.ItemTemplate>
         <DataTemplate>
           <TextBlock Margin="2,6">
-            <Hyperlink Command="{Binding Path=Command}">
+            <Hyperlink Command="{Binding Path=ControlPanelCommandInvoked}">
               <TextBlock Text="{Binding Path=ControlPanelCommands}" />
             </Hyperlink>
           </TextBlock>
