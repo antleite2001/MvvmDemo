@@ -6,7 +6,6 @@ This resource dictionary is used by the MainWindow.
   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
   xmlns:vm="clr-namespace:DemoApp.ViewModel"
   xmlns:vw="clr-namespace:DemoApp.View"
-  xmlns:diag="clr-namespace:System.Diagnostics;assembly=WindowsBase"
   >
 
   <!-- 
@@ -97,7 +96,7 @@ This resource dictionary is used by the MainWindow.
         <DataTemplate>
           <TextBlock Margin="2,6">
             <Hyperlink Command="{Binding Path=Command}">
-              <TextBlock Text="{Binding Path=xDisplayName}" />
+              <TextBlock Text="{Binding Path=DisplayName}" />
             </Hyperlink>
           </TextBlock>
         </DataTemplate>
@@ -112,9 +111,8 @@ This resource dictionary is used by the MainWindow.
   <DataTemplate x:Key="ClosableTabItemTemplate">
     <DockPanel Width="120">
       <Button 
-        Command="{Binding Path=CloseCommand,  
-            diag:PresentationTraceSources.TraceLevel=High}"
-        Content="X"
+        Command="{Binding Path=CloseCommand}"
+        Content="zzzz"
         Cursor="Hand"
         DockPanel.Dock="Right"
         Focusable="False"
@@ -127,7 +125,7 @@ This resource dictionary is used by the MainWindow.
         Width="16" Height="16" 
         />
       <ContentPresenter 
-        Content="{Binding Path=xDisplayName}" 
+        Content="{Binding Path=DisplayName}" 
         VerticalAlignment="Center" 
         />
     </DockPanel>
@@ -144,5 +142,14 @@ This resource dictionary is used by the MainWindow.
       Margin="4"
       />
   </DataTemplate>
-
+  <!--
+  This template explains how to render the 'Button' content area in the main window.
+  -->
+  <DataTemplate x:Key="ButtonsTemplate">
+    <TabControl 
+      IsSynchronizedWithCurrentItem="True" 
+      ItemsSource="{Binding}" 
+       Margin="4"
+      />
+  </DataTemplate>
 </ResourceDictionary>
