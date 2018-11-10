@@ -1,0 +1,3 @@
+C:\Users\ACVL\Documents\WPF\MvvmDemoApp\MvvmDemoApp\UnitTests\obj\Debug\UnitTests.csprojAssemblyReference.cache
+C:\Users\ACVL\Documents\WPF\MvvmDemoApp\MvvmDemoApp\UnitTests\obj\Debug\UnitTests.g.resources
+C:\Users\ACVL\Documents\WPF\MvvmDemoApp\MvvmDemoApp\UnitTests\obj\Debug\UnitTests.csproj.CoreCompileInputs.cache
