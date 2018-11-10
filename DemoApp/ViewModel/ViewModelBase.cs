@@ -16,6 +16,18 @@ namespace DemoApp.ViewModel
     protected ViewModelBase()
     {
       System.Diagnostics.PresentationTraceSources.DataBindingSource.Switch.Level = System.Diagnostics.SourceLevels.Critical;
+
+      try
+      {
+        Debug.WriteLine("(33) protected ViewModelBase() ");
+      }
+      catch (Exception ex)
+      {
+        Debug.WriteLine("(33) protected ViewModelBase() " + ex.Message);
+
+      }
+
+
     }
 
     #endregion // Constructor
@@ -27,7 +39,7 @@ namespace DemoApp.ViewModel
     /// Child classes can set this property to a new value,
     /// or override it to determine the value on-demand.
     /// </summary>
-    public virtual string DisplayPersonCompanyName
+    public virtual string DisplayNameX
     {
       get;
       protected set;
@@ -36,7 +48,7 @@ namespace DemoApp.ViewModel
     #endregion // DisplayName
 
 
-     
+
 
 
 
@@ -128,9 +140,11 @@ namespace DemoApp.ViewModel
     /// </summary>
     ~ViewModelBase()
     {
-      string msg = string.Format("{0} ({1}) ({2}) Finalized", GetType().Name, DisplayPersonCompanyName, GetHashCode());
+      string msg = string.Format("{0} ({1}) ({2}) Finalized", GetType().Name, DisplayNameX, GetHashCode());
       try
-      { Debug.WriteLine("(2) ~ViewModelBase(): " + msg); }
+      {
+        Debug.WriteLine("(2) ~ViewModelBase(): " + msg);
+      }
       catch (Exception ex)
       {
         Debug.WriteLine("(2) ~ViewModelBase(): " + ex.Message);

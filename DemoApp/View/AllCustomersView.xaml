@@ -18,7 +18,7 @@
         which means that companies will always be listed before people.
         -->
         <scm:SortDescription PropertyName="IsCompany" Direction="Descending" />
-        <scm:SortDescription PropertyName="DisplayName" Direction="Ascending" />
+        <scm:SortDescription PropertyName="DisplayNameX" Direction="Ascending" />
       </CollectionViewSource.SortDescriptions>
     </CollectionViewSource>
 
@@ -94,7 +94,7 @@
         <GridView>
           <GridViewColumn 
             Header="Name" 
-            DisplayMemberBinding="{Binding Path=DisplayName}" 
+            DisplayMemberBinding="{Binding Path=DisplayNameX}" 
             />
           <GridViewColumn 
             Header="E-mail" 

@@ -9,7 +9,7 @@
   FontFamily="Verdana"
   MinWidth="650" MinHeight="420"
   
-  Title="{Binding DisplayName, 
+  Title="{Binding DisplayNameX, 
    PresentationTraceSources.TraceLevel=Medium}"  
   Width="900" Height="420"
   WindowStartupLocation="CenterScreen" Background="#FFA43434"
@@ -51,9 +51,24 @@
           x:Name="hccControlPanel" 
           Header="Control Panel"
           Content="{Binding ControlPanelCommands, 
-          PresentationTraceSources.TraceLevel=High}"
-          ContentTemplate="{StaticResource CommandsTemplate}"          
-          Style="{StaticResource MainHCCStyle}"/>
+          PresentationTraceSources.TraceLevel=High}"        
+          
+          
+          
+          ContentTemplate="{StaticResource ControlPanelCommands}"          
+         
+          
+          
+          
+          
+          Style="{StaticResource MainHCCStyle}">
+          
+
+        </HeaderedContentControl>
+
+
+
+
       </Border>
 
       <Border x:Name="borderWorkSpaces" 

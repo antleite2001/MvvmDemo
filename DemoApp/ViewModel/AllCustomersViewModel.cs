@@ -34,7 +34,7 @@ namespace DemoApp.ViewModel
         throw new ArgumentNullException("customerRepository");
       }
 
-      base.DisplayPersonCompanyName = Strings.AllCustomersViewModel_DisplayName;
+      base.DisplayNameX = Strings.AllCustomersViewModel_DisplayName;
 
       _customerRepository = customerRepository;
 

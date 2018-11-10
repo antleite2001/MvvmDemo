@@ -90,13 +90,13 @@ This resource dictionary is used by the MainWindow.
   This template explains how to render the list of commands on the left
   side in the main window (the 'Control Panel' area).
   -->
-  <DataTemplate x:Key="CommandsTemplate">
+  <DataTemplate x:Key="ControlPanelCommands">
     <ItemsControl IsTabStop="False" ItemsSource="{Binding}" Margin="6,2">
       <ItemsControl.ItemTemplate>
         <DataTemplate>
           <TextBlock Margin="2,6">
-            <Hyperlink Command="{Binding Path=Command}">
-              <TextBlock Text="{Binding Path=DisplayName}" />
+            <Hyperlink Command="{Binding Path=ControlPanelCommands}">
+              <TextBlock Text="{Binding Path=DisplayNameX}" />
             </Hyperlink>
           </TextBlock>
         </DataTemplate>
@@ -125,7 +125,7 @@ This resource dictionary is used by the MainWindow.
         Width="16" Height="16" 
         />
       <ContentPresenter 
-        Content="{Binding Path=DisplayName}" 
+        Content="{Binding Path=DisplayNameX}" 
         VerticalAlignment="Center" 
         />
     </DockPanel>

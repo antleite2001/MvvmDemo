@@ -33,19 +33,18 @@ namespace DemoApp.ViewModel
       System.Diagnostics.PresentationTraceSources.DataBindingSource.Switch.Level = System.Diagnostics.SourceLevels.Critical;
 
 
-      base.DisplayPersonCompanyName = Strings.MainWindowViewModel_DisplayName;
+      base.DisplayNameX = Strings.MainWindowViewModel_DisplayName;
 
       _customerRepository = new CustomerRepository(customerDataFile);
 
 
       try
       {
-        Debug.WriteLine("(7) MainWindowViewModel: " + base.DisplayPersonCompanyName + " " + _customerRepository.ToString());
+        Debug.WriteLine("(7) MainWindowViewModel: " + base.DisplayNameX + " " + _customerRepository.ToString());
       }
       catch (Exception ex)
       {
         Debug.WriteLine("(7) MainWindowViewModel: " + ex.Message);
-
       }
     }
 
@@ -105,7 +104,7 @@ try
         Debug.WriteLine("(27) List<CommandViewModel> CreateCommands()" );
         foreach (CommandViewModel c in m)
         {
-          Debug.WriteLine("  " + c.DisplayPersonCompanyName  );
+          Debug.WriteLine("  " + c.DisplayNameX  );
         }
       }
       catch (Exception ex)

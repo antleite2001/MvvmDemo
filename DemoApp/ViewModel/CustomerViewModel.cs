@@ -163,10 +163,20 @@ namespace DemoApp.ViewModel
       }
     }
 
-    public override string DisplayPersonCompanyName
+    public override string DisplayNameX
     {
       get
       {
+        try
+        {
+          Debug.WriteLine("(18) public override string DisplayName " + IsNewCustomer.ToString() + "  "+ _customer.FirstName);
+        }
+        catch (Exception ex)
+        {
+          Debug.WriteLine("(18) public override string DisplayName " + ex.Message);
+
+        }
+
         if (IsNewCustomer)
         {
           return Strings.CustomerViewModel_DisplayName;
@@ -247,7 +257,7 @@ namespace DemoApp.ViewModel
         _customerRepository.AddCustomer(_customer);
       }
 
-      base.OnPropertyChanged("DisplayName");
+      base.OnPropertyChanged("DisplayNameX");
     }
 
     #endregion // Public Methods

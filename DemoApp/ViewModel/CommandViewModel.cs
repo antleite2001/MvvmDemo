@@ -17,7 +17,7 @@ namespace DemoApp.ViewModel
         throw new ArgumentNullException("command");
       }
 
-      base.DisplayPersonCompanyName = displayName;
+      base.DisplayNameX = displayName;
 
       Command = command;
 
