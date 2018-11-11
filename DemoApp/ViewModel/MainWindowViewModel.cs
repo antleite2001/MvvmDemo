@@ -9,6 +9,8 @@ using System.ComponentModel;
 using System.Diagnostics;
 using System.Linq;
 using System.Windows.Data;
+using System.Windows.Input;
+
 
 namespace DemoApp.ViewModel
 {
@@ -50,6 +52,13 @@ namespace DemoApp.ViewModel
     }
 
     #endregion // Constructor
+
+
+
+
+    
+
+
 
     #region Commands
 
@@ -188,16 +197,10 @@ namespace DemoApp.ViewModel
 
       try
       {
+        
         Diag.UpdateLog(false, "(47) ExitCommand()");
-
-         foreach(CommandViewModel cvm in _commands)
-        {
-          Diag.UpdateLog(false, "   (47) " + cvm.ViewModelBaseInstanceName + " " + cvm.ControlPanelHyperlinkInvokeCommand.ToString());
-          if(cvm.ViewModelBaseInstanceName.Contains("EXIT"))
-          {
-            cvm.ControlPanelHyperlinkInvokeCommand.Execute(null);
-          }
-        }
+        CloseCommand.Execute(null);
+         
          
            
          

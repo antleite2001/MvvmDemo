@@ -20,11 +20,8 @@
     View all customers
     Create new customer
     EXIT BUTTON
-(47) ExitCommand()
-   (47) View all customers DemoApp.RelayCommand
-   (47) Create new customer DemoApp.RelayCommand
-   (47) EXIT BUTTON DemoApp.RelayCommand
-(47) ExitCommand()
-   (47) View all customers DemoApp.RelayCommand
-   (47) Create new customer DemoApp.RelayCommand
-   (47) EXIT BUTTON DemoApp.RelayCommand
+(36) private void OnRequestClose() 
+(2) ~ViewModelBase(): CommandViewModel (EXIT BUTTON) (47891719) Finalized
+(2) ~ViewModelBase(): CommandViewModel (Create new customer) (43332040) Finalized
+(2) ~ViewModelBase(): CommandViewModel (View all customers) (60068066) Finalized
+(2) ~ViewModelBase(): MainWindowViewModel (MVVM Demo App) (7563067) Finalized

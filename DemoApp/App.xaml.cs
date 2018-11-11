@@ -10,7 +10,7 @@ namespace DemoApp
   {
     static App()
     {
-      Diag.UpdateLog(true,"");
+      Diag.UpdateLog(true, "");
       Diag.DataBindingPresentation();
       // This code is used to test the app when using other cultures.
       //
@@ -44,6 +44,15 @@ namespace DemoApp
       EventHandler handler = null;
       handler = delegate
       {
+        try
+        {
+          Diag.UpdateLog(false, "(52) handler = delegate ");
+        }
+        catch (Exception ex)
+        {
+          Diag.UpdateLog(false, "(52) handler = delegate " + ex.Message);
+        }
+
         mainWindowViewModel.RequestClose -= handler;
         window.Close();
       };
