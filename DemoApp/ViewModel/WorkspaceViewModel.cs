@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Diagnostics;
 using System.Windows.Input;
 
 namespace DemoApp.ViewModel
@@ -45,11 +44,11 @@ namespace DemoApp.ViewModel
 
         try
         {
-          Diag.UpdateLog(false,"(15) " +this.GetType().FullName + "; " +System.Reflection.MethodBase.GetCurrentMethod().Name+ ";   ");
+          Diag.UpdateLog(false, "(15) " + GetType().FullName + "; " + System.Reflection.MethodBase.GetCurrentMethod().Name + ";   ");
         }
         catch (Exception ex)
         {
-          Diag.UpdateLog(false,"(15) "+this.GetType().FullName + "; " +System.Reflection.MethodBase.GetCurrentMethod().Name+ ";   " + ex.Message);
+          Diag.UpdateLog(false, "(15) " + GetType().FullName + "; " + System.Reflection.MethodBase.GetCurrentMethod().Name + ";   " + ex.Message);
         }
         return _closeCommand;
       }
@@ -67,13 +66,13 @@ namespace DemoApp.ViewModel
     private void OnWorkSpaceViewModelRequestClose()
     {
       try
-        {
-          Diag.UpdateLog(false,"(17) "+this.GetType().FullName + "; " +System.Reflection.MethodBase.GetCurrentMethod().Name+ ";   ");
-        }
-        catch (Exception ex)
-        {
-          Diag.UpdateLog(false,"(17) "+this.GetType().FullName + "; " +System.Reflection.MethodBase.GetCurrentMethod().Name+ ";   " + ex.Message);
-        }
+      {
+        Diag.UpdateLog(false, "(17) " + GetType().FullName + "; " + System.Reflection.MethodBase.GetCurrentMethod().Name + ";   ");
+      }
+      catch (Exception ex)
+      {
+        Diag.UpdateLog(false, "(17) " + GetType().FullName + "; " + System.Reflection.MethodBase.GetCurrentMethod().Name + ";   " + ex.Message);
+      }
       WorkSpaceViewModelRequestClose?.Invoke(this, EventArgs.Empty);
     }
 

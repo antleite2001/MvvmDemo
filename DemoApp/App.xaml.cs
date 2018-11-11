@@ -10,7 +10,7 @@ namespace DemoApp
   {
     static App()
     {
-      Diag.UpdateLog(true, "");
+      Diag.UpdateLog(true, "--------------------------------------------------------------------------");
       Diag.DataBindingPresentation();
       // This code is used to test the app when using other cultures.
       //
