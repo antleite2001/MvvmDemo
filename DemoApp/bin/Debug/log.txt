@@ -1,15 +1,15 @@
 (1) CustomerRepository(): 12
 (7) MainWindowViewModel: MVVM Demo App DemoApp.DataAccess.CustomerRepository
-(6) RelayCommand(): Void <get_CloseCommand>b__3_0(System.Object)  DemoApp.ViewModel.MainWindowViewModel
+(6) RelayCommand(): <get_CloseCommand>b__3_0   Void <get_CloseCommand>b__3_0(System.Object)  DemoApp.ViewModel.MainWindowViewModel
 (4) RelayCommand(): System.Action`1[System.Object]
 (13) public ICommand CloseCommand 
-(6) RelayCommand(): Void <CreateCommands>b__6_0(System.Object)  DemoApp.ViewModel.MainWindowViewModel
+(6) RelayCommand(): <CreateControlPanelCommands>b__6_0   Void <CreateControlPanelCommands>b__6_0(System.Object)  DemoApp.ViewModel.MainWindowViewModel
 (4) RelayCommand(): System.Action`1[System.Object]
 (5) CommandViewModel: View all customers  DemoApp.RelayCommand
-(6) RelayCommand(): Void <CreateCommands>b__6_1(System.Object)  DemoApp.ViewModel.MainWindowViewModel
+(6) RelayCommand(): <CreateControlPanelCommands>b__6_1   Void <CreateControlPanelCommands>b__6_1(System.Object)  DemoApp.ViewModel.MainWindowViewModel
 (4) RelayCommand(): System.Action`1[System.Object]
 (5) CommandViewModel: Create new customer  DemoApp.RelayCommand
-(6) RelayCommand(): Void <CreateCommands>b__6_2(System.Object)  DemoApp.ViewModel.MainWindowViewModel
+(6) RelayCommand(): <CreateControlPanelCommands>b__6_2   Void <CreateControlPanelCommands>b__6_2(System.Object)  DemoApp.ViewModel.MainWindowViewModel
 (4) RelayCommand(): System.Action`1[System.Object]
 (5) CommandViewModel: EXIT BUTTON  DemoApp.RelayCommand
 (27) List<CommandViewModel> CreateCommands()
@@ -20,7 +20,11 @@
     View all customers
     Create new customer
     EXIT BUTTON
-(2) ~ViewModelBase(): CommandViewModel (EXIT BUTTON) (47891719) Finalized
-(2) ~ViewModelBase(): CommandViewModel (Create new customer) (43332040) Finalized
-(2) ~ViewModelBase(): CommandViewModel (View all customers) (60068066) Finalized
-(2) ~ViewModelBase(): MainWindowViewModel (MVVM Demo App) (7563067) Finalized
+(47) ExitCommand()
+   (47) View all customers DemoApp.RelayCommand
+   (47) Create new customer DemoApp.RelayCommand
+   (47) EXIT BUTTON DemoApp.RelayCommand
+(47) ExitCommand()
+   (47) View all customers DemoApp.RelayCommand
+   (47) Create new customer DemoApp.RelayCommand
+   (47) EXIT BUTTON DemoApp.RelayCommand

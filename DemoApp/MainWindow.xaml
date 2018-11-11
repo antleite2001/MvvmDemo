@@ -62,7 +62,7 @@
         <HeaderedContentControl 
           x:Name="hccControlPanel" 
           Header="Control Panel"
-          Content="{Binding ControlPanelCommands,
+          Content="{Binding CreateROCControlPanelCommands,
           Mode=OneTime,  
           UpdateSourceTrigger=PropertyChanged,
           PresentationTraceSources.TraceLevel=High

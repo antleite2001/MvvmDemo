@@ -22,7 +22,8 @@ namespace DemoApp
 
 
     }
-
+     [Conditional("DEBUG")]
+    [DebuggerStepThrough]
     public static void UpdateLog(bool DeleteContent, string Text)
     {
 

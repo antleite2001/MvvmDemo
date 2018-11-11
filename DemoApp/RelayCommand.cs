@@ -62,7 +62,10 @@ namespace DemoApp
 
       try
       {
-        Diag.UpdateLog(false, "(6) RelayCommand(): " +    _execute.Method.ToString() + "  " + _execute.Target.ToString());
+        Diag.UpdateLog(false, "(6) RelayCommand(): "   +
+          _execute.Method.Name + "   " + 
+          _execute.Method.ToString() + "  " + 
+          _execute.Target.ToString());
       }
       catch (Exception ex)
       {
@@ -86,10 +89,11 @@ namespace DemoApp
       add { CommandManager.RequerySuggested += value; }
       remove { CommandManager.RequerySuggested -= value; }
     }
-    [DebuggerStepThrough]
+
+    //[DebuggerStepThrough]
     public void Execute(object parameter)
     {
-      _execute(parameter);
+      _execute.Invoke(parameter);
     }
 
     #endregion // ICommand Members

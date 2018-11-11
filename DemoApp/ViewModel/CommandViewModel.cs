@@ -18,8 +18,7 @@ namespace DemoApp.ViewModel
       }
 
       base.ViewModelBaseInstanceName = displayName;
-      //base.ControlPanelCommandsText= displayName;
-      ControlPanelCommandInvoked = command;
+      ControlPanelHyperlinkInvokeCommand = command;
 
 
       try
@@ -33,6 +32,6 @@ namespace DemoApp.ViewModel
       }
     }
 
-    public ICommand ControlPanelCommandInvoked { get; private set; }
+    public ICommand ControlPanelHyperlinkInvokeCommand { get; private set; }
   }
 }

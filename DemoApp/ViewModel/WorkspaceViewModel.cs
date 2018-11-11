@@ -39,6 +39,7 @@ namespace DemoApp.ViewModel
       {
         if (_closeCommand == null)
         {
+          //Register CloseCommand in a RelayCommand
           _closeCommand = new RelayCommand(param => OnRequestClose());
         }
 

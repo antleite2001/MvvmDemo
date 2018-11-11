@@ -40,11 +40,11 @@ namespace DemoApp.ViewModel
 
       try
       {
-        Diag.UpdateLog(false,"(7) MainWindowViewModel: " + base.ViewModelBaseInstanceName + " " + _customerRepository.ToString());
+        Diag.UpdateLog(false, "(7) MainWindowViewModel: " + base.ViewModelBaseInstanceName + " " + _customerRepository.ToString());
       }
       catch (Exception ex)
       {
-        Diag.UpdateLog(false,"(7) MainWindowViewModel: " + ex.Message);
+        Diag.UpdateLog(false, "(7) MainWindowViewModel: " + ex.Message);
 
       }
     }
@@ -57,34 +57,34 @@ namespace DemoApp.ViewModel
     /// Returns a read-only list of commands 
     /// that the UI can display and execute.
     /// </summary>
-    public ReadOnlyCollection<CommandViewModel> ControlPanelCommands
+    public ReadOnlyCollection<CommandViewModel> CreateROCControlPanelCommands
     {
       get
       {
         if (_commands == null)
         {
-          List<CommandViewModel> cmds = CreateCommands();
+          List<CommandViewModel> cmds = CreateControlPanelCommands();
           _commands = new ReadOnlyCollection<CommandViewModel>(cmds);
         }
 
         try
         {
-          Diag.UpdateLog(false,"(11) ReadOnlyCollection<CommandViewModel> Commands: " + _commands.Count.ToString());
-          foreach(CommandViewModel c in _commands)
+          Diag.UpdateLog(false, "(11) ReadOnlyCollection<CommandViewModel> Commands: " + _commands.Count.ToString());
+          foreach (CommandViewModel c in _commands)
           {
-            Diag.UpdateLog(false, "    " +    c.ViewModelBaseInstanceName);
+            Diag.UpdateLog(false, "    " + c.ViewModelBaseInstanceName);
           }
-          
+
         }
         catch (Exception ex)
         {
-          Diag.UpdateLog(false,"(11) ReadOnlyCollection<CommandViewModel> Commands: " + ex.Message);
+          Diag.UpdateLog(false, "(11) ReadOnlyCollection<CommandViewModel> Commands: " + ex.Message);
         }
         return _commands;
       }
     }
 
-    private List<CommandViewModel> CreateCommands()
+    private List<CommandViewModel> CreateControlPanelCommands()
     {
       List<CommandViewModel> m = new List<CommandViewModel>
             {
@@ -103,18 +103,18 @@ namespace DemoApp.ViewModel
                     new RelayCommand(param => ExitCommand()))
             };
 
-      
-try
+
+      try
       {
-        Diag.UpdateLog(false,"(27) List<CommandViewModel> CreateCommands()" );
+        Diag.UpdateLog(false, "(27) List<CommandViewModel> CreateCommands()");
         foreach (CommandViewModel c in m)
         {
-          Diag.UpdateLog(false,"  " + c.ViewModelBaseInstanceName  );
+          Diag.UpdateLog(false, "  " + c.ViewModelBaseInstanceName);
         }
       }
       catch (Exception ex)
       {
-        Diag.UpdateLog(false,"(27)List<CommandViewModel> CreateCommands() " + ex.Message);
+        Diag.UpdateLog(false, "(27)List<CommandViewModel> CreateCommands() " + ex.Message);
 
       }
 
@@ -186,6 +186,30 @@ try
     private void ExitCommand()
     {
 
+      try
+      {
+        Diag.UpdateLog(false, "(47) ExitCommand()");
+
+         foreach(CommandViewModel cvm in _commands)
+        {
+          Diag.UpdateLog(false, "   (47) " + cvm.ViewModelBaseInstanceName + " " + cvm.ControlPanelHyperlinkInvokeCommand.ToString());
+          if(cvm.ViewModelBaseInstanceName.Contains("EXIT"))
+          {
+            cvm.ControlPanelHyperlinkInvokeCommand.Execute(null);
+          }
+        }
+         
+           
+         
+      }
+      catch (Exception ex)
+      {
+        Diag.UpdateLog(false, "(47) ExitCommand()" + ex.Message);
+
+      }
+
+
+       
     }
 
     private void ShowAllCustomers()
