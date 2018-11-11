@@ -1,4 +1,4 @@
-
+--------------------------------------------------------------------------
 (3) CustomerRepository;  LoadCustomers;   
 (2) DemoApp.DataAccess.CustomerRepository; .ctor;   12
 (8) DemoApp.ViewModel.MainWindowViewModel; .ctor;   MVVM Demo App DemoApp.DataAccess.CustomerRepository

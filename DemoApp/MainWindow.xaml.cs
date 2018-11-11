@@ -1,7 +1,4 @@
-﻿using System.Diagnostics;
- 
-
-namespace DemoApp
+﻿namespace DemoApp
 {
   public partial class MainWindow : System.Windows.Window
   {

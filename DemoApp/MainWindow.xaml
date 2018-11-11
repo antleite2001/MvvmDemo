@@ -5,20 +5,15 @@
   xmlns:vm="clr-namespace:DemoApp.ViewModel"
   xmlns:diag="clr-namespace:System.Diagnostics;assembly=WindowsBase"
   xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" 
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:View="clr-namespace:DemoApp.View" mc:Ignorable="d" 
   x:Class="DemoApp.MainWindow"
+    
   FontSize="13" 
   FontFamily="Verdana"
   MinWidth="650" MinHeight="420"
   
-  Title="{Binding ViewModelBaseInstanceName, 
-          Mode=OneTime, 
-          UpdateSourceTrigger=PropertyChanged,           
-          TargetNullValue='Error: Title Binding Wrong Value',
-          FallbackValue='Error: Title Binding Wrong Value',
-          PresentationTraceSources.TraceLevel=High
-  }"  
-  Width="900" Height="420"
+  Title="{Binding ViewModelBaseInstanceName, FallbackValue=Error: Title Binding Wrong Value, Mode=OneTime, TargetNullValue=Error: Title Binding Wrong Value, PresentationTraceSources.TraceLevel=High, UpdateSourceTrigger=PropertyChanged}"  
+  Width="900" Height="438.621"
   WindowStartupLocation="CenterScreen" Background="#FFA43434"
   >
 
@@ -28,16 +23,13 @@
   </Window.Resources>
 
   <DockPanel x:Name="docPanelWindow">
-    <DockPanel x:Name="docPanelMenu" DockPanel.Dock="Top" KeyboardNavigation.TabNavigation="None"  >
+    <DockPanel x:Name="docPanelMenu" 
+               DockPanel.Dock="Top" 
+               KeyboardNavigation.TabNavigation="None"  >
       <Menu x:Name="menu" KeyboardNavigation.TabNavigation="Cycle">
         <MenuItem Header="_File">
           <MenuItem x:Name="E_xit" Header="E_xit" 
-                    Command="{
-            Binding CloseCommand,     
-                    Mode=OneTime,    
-                    UpdateSourceTrigger=PropertyChanged, 
-                    PresentationTraceSources.TraceLevel=High
-            }" d:IsLocked="True" />
+                    Command="{Binding CloseCommand, Mode=OneTime, PresentationTraceSources.TraceLevel=High, UpdateSourceTrigger=PropertyChanged}" d:IsLocked="True" />
         </MenuItem>
         <MenuItem Header="_Edit" />
         <MenuItem Header="_Options" />
@@ -48,7 +40,7 @@
     <Grid x:Name="grid" Margin="20" Background="Yellow">
       <Grid.ColumnDefinitions>
         <ColumnDefinition x:Name="ControlPanel" Width="200" />
-        <ColumnDefinition Width="10" />
+        <ColumnDefinition Width="250" />
         <ColumnDefinition x:Name="WorkSpaces" Width="450" />
         <ColumnDefinition Width="10" />
         <ColumnDefinition x:Name="Buttons" Width="170" />
@@ -62,16 +54,14 @@
         <HeaderedContentControl 
           x:Name="hccControlPanel" 
           Header="Control Panel"
-          Content="{Binding CreateROCControlPanelCommands,
-          Mode=OneTime,  
-          UpdateSourceTrigger=PropertyChanged,
-          PresentationTraceSources.TraceLevel=High
-           }"
+          Content="{Binding CreateROCControlPanelCommands, Mode=OneTime, PresentationTraceSources.TraceLevel=High, UpdateSourceTrigger=PropertyChanged}"
           ContentTemplate="{StaticResource ControlPanelCommandsTemplate}"          
           Style="{StaticResource MainHCCStyle}"/>
 
       </Border>
-
+      <Border Grid.Column="1" >
+        <!--<pb:UserControl1 Height="100" Width="200"   />-->
+      </Border>
       <Border x:Name="borderWorkSpaces" 
               Background="Aqua" Margin="3"
         Grid.Column="2" 
@@ -79,8 +69,7 @@
         <HeaderedContentControl 
           x:Name="hccWorkSpace" 
           Header="Workspaces"
-          Content="{Binding Workspaces, 
-           PresentationTraceSources.TraceLevel=Medium}"
+          Content="{Binding Workspaces, PresentationTraceSources.TraceLevel=Medium}"
           ContentTemplate="{StaticResource WorkspacesTemplate}"
           Style="{StaticResource MainHCCStyle}"/>
       </Border>
@@ -90,8 +79,7 @@
         Style="{StaticResource MainBorderStyle}">
         <HeaderedContentControl x:Name="hccButtons" 
                                 Header="Buttons"
-          Content="{Binding Workspaces, 
-          PresentationTraceSources.TraceLevel=Medium}"           
+          Content="{Binding Workspaces, PresentationTraceSources.TraceLevel=Medium}"           
           Style="{StaticResource MainHCCStyle}"/>
       </Border>
     </Grid>
