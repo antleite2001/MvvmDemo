@@ -1,7 +1,6 @@
 ﻿using DemoApp.Model;
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Windows;
@@ -37,11 +36,11 @@ namespace DemoApp.DataAccess
 
       try
       {
-        Diag.UpdateLog(true,"(1) CustomerRepository(): " + _customers.Count.ToString());
+        Diag.UpdateLog(false, "(2) " + GetType().FullName + "; " + System.Reflection.MethodBase.GetCurrentMethod().Name + ";   " + _customers.Count.ToString());
       }
       catch (Exception ex)
       {
-        Debug.WriteLine("(1) CustomerRepository(): " + ex.Message);
+        Diag.UpdateLog(false, "(2) " + GetType().FullName + "; " + System.Reflection.MethodBase.GetCurrentMethod().Name + ";   " + ex.Message);
 
       }
     }
@@ -114,11 +113,11 @@ namespace DemoApp.DataAccess
         {
           try
           {
-            Diag.UpdateLog(false,"(17) List<Customer> LoadCustomers ");
+            Diag.UpdateLog(false, "(3) CustomerRepository;  " + System.Reflection.MethodBase.GetCurrentMethod().Name + ";   ");
           }
           catch (Exception ex)
           {
-            Diag.UpdateLog(false,"(17) List<Customer> LoadCustomers " + ex.Message);
+            Diag.UpdateLog(false, "(3) CustomerRepository;  " + System.Reflection.MethodBase.GetCurrentMethod().Name + ";   " + ex.Message);
 
           }
           return

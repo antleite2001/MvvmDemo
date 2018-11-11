@@ -41,11 +41,13 @@ namespace DemoApp.ViewModel
 
       try
       {
-        Diag.UpdateLog(false, "(7) MainWindowViewModel: " + base.ViewModelBaseInstanceName + " " + _customerRepository.ToString());
+        Diag.UpdateLog(false, "(8) "+this.GetType().FullName + "; " +System.Reflection.MethodBase.GetCurrentMethod().Name+ ";   " + 
+          base.ViewModelBaseInstanceName + " " +
+          _customerRepository.ToString());
       }
       catch (Exception ex)
       {
-        Diag.UpdateLog(false, "(7) MainWindowViewModel: " + ex.Message);
+        Diag.UpdateLog(false, "(8) "+this.GetType().FullName + "; " +System.Reflection.MethodBase.GetCurrentMethod().Name+ ";   " + ex.Message);
 
       }
     }
@@ -77,7 +79,7 @@ namespace DemoApp.ViewModel
 
         try
         {
-          Diag.UpdateLog(false, "(11) CreateROCControlPanelCommands: " + _commands.Count.ToString());
+          Diag.UpdateLog(false, "(11) "+this.GetType().FullName + "; " +System.Reflection.MethodBase.GetCurrentMethod().Name+ ";   " + _commands.Count.ToString());
           foreach (CommandViewModel c in _commands)
           {
             Diag.UpdateLog(false, "    " + c.ViewModelBaseInstanceName);
@@ -86,7 +88,7 @@ namespace DemoApp.ViewModel
         }
         catch (Exception ex)
         {
-          Diag.UpdateLog(false, "(11) CreateROCControlPanelCommands: " + ex.Message);
+          Diag.UpdateLog(false, "(11) "+this.GetType().FullName + "; " +System.Reflection.MethodBase.GetCurrentMethod().Name+ ";   " + ex.Message);
         }
         return _commands;
       }
@@ -104,17 +106,15 @@ namespace DemoApp.ViewModel
                     Strings.MainWindowViewModel_Command_CreateNewCustomer,
                     new RelayCommand(param => CreateNewCustomer())),
 
-
-                //TODO
                 new CommandViewModel(
                     Strings.MainWindowViewModel_Command_ExitButton,
-                     new RelayCommand(param => OnRequestClose()))
+                     new RelayCommand(param => OnMainWindowViewModelRequestClose()))
             };
 
 
       try
       {
-        Diag.UpdateLog(false, "(27) List<CommandViewModel> CreateCommands()");
+        Diag.UpdateLog(false, "(12) "+this.GetType().FullName + "; " +System.Reflection.MethodBase.GetCurrentMethod().Name+ ";   ");
         foreach (CommandViewModel c in m)
         {
           Diag.UpdateLog(false, "  " + c.ViewModelBaseInstanceName);
@@ -122,7 +122,7 @@ namespace DemoApp.ViewModel
       }
       catch (Exception ex)
       {
-        Diag.UpdateLog(false, "(27)List<CommandViewModel> CreateCommands() " + ex.Message);
+        Diag.UpdateLog(false, "(12) "+this.GetType().FullName + "; " +System.Reflection.MethodBase.GetCurrentMethod().Name+ ";   " + ex.Message);
 
       }
 
@@ -141,19 +141,19 @@ namespace DemoApp.ViewModel
     /// <summary>
     /// Raised when this workspace should be removed from the UI.
     /// </summary>
-    public event EventHandler RequestCloseX;
+    public event EventHandler MainWindowViewModelRequestClose;
 
-    private void OnRequestClose()
+    private void OnMainWindowViewModelRequestClose()
     {
       try
       {
-        Diag.UpdateLog(false, "(80) private void OnRequestClose() ");
+        Diag.UpdateLog(false,   "(13) "+this.GetType().FullName + "; " +System.Reflection.MethodBase.GetCurrentMethod().Name);
       }
       catch (Exception ex)
       {
-        Diag.UpdateLog(false, "(80) private void OnRequestClose()  " + ex.Message);
+        Diag.UpdateLog(false,  "(13) "+this.GetType().FullName + "; " +System.Reflection.MethodBase.GetCurrentMethod().Name+ ";   "+ ex.Message);
       }
-      RequestCloseX?.Invoke(this, EventArgs.Empty);
+      MainWindowViewModelRequestClose?.Invoke(this, EventArgs.Empty);
     }
 
     #endregion // RequestClose [event]
@@ -188,7 +188,7 @@ namespace DemoApp.ViewModel
       {
         foreach (WorkspaceViewModel workspace in e.NewItems)
         {
-          workspace.RequestClose += OnWorkspaceRequestClose;
+          workspace.WorkSpaceViewModelRequestClose += OnWorkspaceRequestClose;
         }
       }
 
@@ -196,7 +196,7 @@ namespace DemoApp.ViewModel
       {
         foreach (WorkspaceViewModel workspace in e.OldItems)
         {
-          workspace.RequestClose -= OnWorkspaceRequestClose;
+          workspace.WorkSpaceViewModelRequestClose -= OnWorkspaceRequestClose;
         }
       }
     }

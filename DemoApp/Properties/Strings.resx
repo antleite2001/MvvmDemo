@@ -178,7 +178,7 @@
     <comment>Title of the main window</comment>
   </data>
   <data name="MainWindowViewModel_Command_ExitButton" xml:space="preserve">
-    <value>EXIT BUTTON</value>
-    <comment>Title of the main window</comment>
+    <value>Exit</value>
+    <comment>Hyperlink in Control Panle to Exit the Application</comment>
   </data>
 </root>

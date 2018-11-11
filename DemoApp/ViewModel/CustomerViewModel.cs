@@ -217,11 +217,11 @@ namespace DemoApp.ViewModel
         }
         try
         {
-          Diag.UpdateLog(false,"(12) public ICommand SaveCommand: "  );
+          Diag.UpdateLog(false,"(7) "+this.GetType().FullName + "; " +System.Reflection.MethodBase.GetCurrentMethod().Name+ ";   "  );
         }
         catch (Exception ex)
         {
-          Diag.UpdateLog(false,"(12) public ICommand SaveCommand: " + ex.Message);
+          Diag.UpdateLog(false,"(7) "+this.GetType().FullName + "; " +System.Reflection.MethodBase.GetCurrentMethod().Name+ ";   " + ex.Message);
 
         }
         return _saveCommand;

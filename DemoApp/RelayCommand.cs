@@ -32,11 +32,11 @@ namespace DemoApp
 
       try
       {
-        Diag.UpdateLog(false, "(4) RelayCommand(): " + execute.ToString());
+        Diag.UpdateLog(false, "(4) "+this.GetType().FullName + "; " +System.Reflection.MethodBase.GetCurrentMethod().Name+ ";   "+ execute.ToString());
       }
       catch (Exception ex)
       {
-        Diag.UpdateLog(false, "(4) RelayCommand(): " + ex.Message);
+        Diag.UpdateLog(false, "(4) "+this.GetType().FullName + "; " +System.Reflection.MethodBase.GetCurrentMethod().Name+ ";   " + ex.Message);
 
       }
 
@@ -62,14 +62,14 @@ namespace DemoApp
 
       try
       {
-        Diag.UpdateLog(false, "(6) RelayCommand(): "   +
+        Diag.UpdateLog(false, "(5) "+this.GetType().FullName + "; " +System.Reflection.MethodBase.GetCurrentMethod().Name+ ";   "   +
           _execute.Method.Name + "   " + 
           _execute.Method.ToString() + "  " + 
           _execute.Target.ToString());
       }
       catch (Exception ex)
       {
-        Diag.UpdateLog(false, "(6) RelayCommand(): " + ex.Message);
+        Diag.UpdateLog(false, "(5) "+this.GetType().FullName + "; " +System.Reflection.MethodBase.GetCurrentMethod().Name+ ";   " + ex.Message);
       }
 
     }

@@ -40,16 +40,16 @@ namespace DemoApp.ViewModel
         if (_closeCommand == null)
         {
           //Register CloseCommand in a RelayCommand
-          _closeCommand = new RelayCommand(param => OnRequestClose());
+          _closeCommand = new RelayCommand(param => OnWorkSpaceViewModelRequestClose());
         }
 
         try
         {
-          Diag.UpdateLog(false,"(13) public ICommand CloseCommand ");
+          Diag.UpdateLog(false,"(15) " +this.GetType().FullName + "; " +System.Reflection.MethodBase.GetCurrentMethod().Name+ ";   ");
         }
         catch (Exception ex)
         {
-          Diag.UpdateLog(false,"(13)public ICommand CloseCommand " + ex.Message);
+          Diag.UpdateLog(false,"(15) "+this.GetType().FullName + "; " +System.Reflection.MethodBase.GetCurrentMethod().Name+ ";   " + ex.Message);
         }
         return _closeCommand;
       }
@@ -62,19 +62,19 @@ namespace DemoApp.ViewModel
     /// <summary>
     /// Raised when this workspace should be removed from the UI.
     /// </summary>
-    public event EventHandler RequestClose;
+    public event EventHandler WorkSpaceViewModelRequestClose;
 
-    private void OnRequestClose()
+    private void OnWorkSpaceViewModelRequestClose()
     {
       try
         {
-          Diag.UpdateLog(false,"(36) private void OnRequestClose() ");
+          Diag.UpdateLog(false,"(17) "+this.GetType().FullName + "; " +System.Reflection.MethodBase.GetCurrentMethod().Name+ ";   ");
         }
         catch (Exception ex)
         {
-          Diag.UpdateLog(false,"(36) private void OnRequestClose()  " + ex.Message);
+          Diag.UpdateLog(false,"(17) "+this.GetType().FullName + "; " +System.Reflection.MethodBase.GetCurrentMethod().Name+ ";   " + ex.Message);
         }
-      RequestClose?.Invoke(this, EventArgs.Empty);
+      WorkSpaceViewModelRequestClose?.Invoke(this, EventArgs.Empty);
     }
 
     #endregion // RequestClose [event]

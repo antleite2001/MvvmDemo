@@ -130,11 +130,11 @@ namespace DemoApp.ViewModel
       string msg = string.Format($"{GetType().Name} ({ViewModelBaseInstanceName}) ({GetHashCode()}) Finalized");
       try
       {
-        Diag.UpdateLog(false, "(2) ~ViewModelBase(): " + msg);
+        Diag.UpdateLog(false,"(14) "+this.GetType().FullName + "; " + System.Reflection.MethodBase.GetCurrentMethod().Name+ ";   " + msg);
       }
       catch (Exception ex)
       {
-        Diag.UpdateLog(false, "(2) ~ViewModelBase(): " + ex.Message);
+        Diag.UpdateLog(false, "(14) "+this.GetType().FullName + "; " +System.Reflection.MethodBase.GetCurrentMethod().Name+ ";   " + ex.Message);
       }
     }
 #endif

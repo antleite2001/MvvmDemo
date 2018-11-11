@@ -3,8 +3,13 @@ using System.IO;
 
 namespace DemoApp
 {
+
+  
   public static class Diag
   {
+
+    public static string s = "";
+
     [Conditional("DEBUG")]
     [DebuggerStepThrough]
     public static void DataBindingPresentation()

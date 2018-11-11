@@ -46,19 +46,20 @@ namespace DemoApp
       {
         try
         {
-          Diag.UpdateLog(false, "(52) handler = delegate ");
+          Diag.UpdateLog(false,  "(1) "+this.GetType().FullName + "; " +System.Reflection.MethodBase.GetCurrentMethod().Name);
         }
         catch (Exception ex)
         {
-          Diag.UpdateLog(false, "(52) handler = delegate " + ex.Message);
+          Diag.UpdateLog(false,  "(1) "+this.GetType().FullName + "; " +System.Reflection.MethodBase.GetCurrentMethod().Name+ ";  " + ex.Message);
         }
 
-        mainWindowViewModel.RequestClose -= handler;
+        mainWindowViewModel.WorkSpaceViewModelRequestClose -= handler;
+        mainWindowViewModel.MainWindowViewModelRequestClose -= handler;
         window.Close();
       };
 
-      mainWindowViewModel.RequestClose += handler;
-      mainWindowViewModel.RequestCloseX += handler;
+      mainWindowViewModel.WorkSpaceViewModelRequestClose += handler;
+      mainWindowViewModel.MainWindowViewModelRequestClose += handler;
 
       // Allow all controls in the window to 
       // bind to the ViewModel by setting the 

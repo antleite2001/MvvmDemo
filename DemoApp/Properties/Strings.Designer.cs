@@ -178,6 +178,15 @@ namespace DemoApp.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Exit.
+        /// </summary>
+        public static string MainWindowViewModel_Command_ExitButton {
+            get {
+                return ResourceManager.GetString("MainWindowViewModel_Command_ExitButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to View all customers.
         /// </summary>
         public static string MainWindowViewModel_Command_ViewAllCustomers {
@@ -185,14 +194,7 @@ namespace DemoApp.Properties {
                 return ResourceManager.GetString("MainWindowViewModel_Command_ViewAllCustomers", resourceCulture);
             }
         }
-        /// <summary>
-        ///   Looks up a localized string similar to View all customers.
-        /// </summary>
-        public static string MainWindowViewModel_Command_ExitButton{
-            get {
-                return ResourceManager.GetString("MainWindowViewModel_Command_ExitButton", resourceCulture);
-            }
-        }
+        
         /// <summary>
         ///   Looks up a localized string similar to MVVM Demo App.
         /// </summary>

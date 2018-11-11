@@ -23,11 +23,11 @@ namespace DemoApp.ViewModel
 
       try
       {
-        Diag.UpdateLog(false,"(5) CommandViewModel: " + displayName + "  " + command.ToString());
+        Diag.UpdateLog(false,"(6) "+this.GetType().FullName + "; " +System.Reflection.MethodBase.GetCurrentMethod().Name+ ";   " + displayName + "  " + command.ToString());
       }
       catch (Exception ex)
       {
-        Diag.UpdateLog(false,"(5) CommandViewModel: " + ex.Message);
+        Diag.UpdateLog(false,"(6) "+this.GetType().FullName + "; " +System.Reflection.MethodBase.GetCurrentMethod().Name+ ";   " + ex.Message);
 
       }
     }
