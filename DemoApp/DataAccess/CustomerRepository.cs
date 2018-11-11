@@ -30,14 +30,14 @@ namespace DemoApp.DataAccess
     /// <param name="customerDataFile">The relative path to an XML resource file that contains customer data.</param>
     public CustomerRepository(string customerDataFile)
     {
-      System.Diagnostics.PresentationTraceSources.DataBindingSource.Switch.Level = System.Diagnostics.SourceLevels.Critical;
+      Diag.DataBindingPresentation();
 
       _customers = LoadCustomers(customerDataFile);
 
 
       try
       {
-        Debug.WriteLine("(1) CustomerRepository(): " + _customers.Count.ToString());
+        Diag.UpdateLog(true,"(1) CustomerRepository(): " + _customers.Count.ToString());
       }
       catch (Exception ex)
       {
@@ -114,11 +114,11 @@ namespace DemoApp.DataAccess
         {
           try
           {
-            Debug.WriteLine("(17) List<Customer> LoadCustomers ");
+            Diag.UpdateLog(false,"(17) List<Customer> LoadCustomers ");
           }
           catch (Exception ex)
           {
-            Debug.WriteLine("(17) List<Customer> LoadCustomers " + ex.Message);
+            Diag.UpdateLog(false,"(17) List<Customer> LoadCustomers " + ex.Message);
 
           }
           return

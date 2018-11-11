@@ -30,7 +30,7 @@ namespace DemoApp.ViewModel
     public MainWindowViewModel(string customerDataFile)
     {
 
-      System.Diagnostics.PresentationTraceSources.DataBindingSource.Switch.Level = System.Diagnostics.SourceLevels.Critical;
+      Diag.DataBindingPresentation();
 
 
       base.DisplayName = Strings.MainWindowViewModel_DisplayName;
@@ -40,11 +40,11 @@ namespace DemoApp.ViewModel
 
       try
       {
-        Debug.WriteLine("(7) MainWindowViewModel: " + base.DisplayName + " " + _customerRepository.ToString());
+        Diag.UpdateLog(false,"(7) MainWindowViewModel: " + base.DisplayName + " " + _customerRepository.ToString());
       }
       catch (Exception ex)
       {
-        Debug.WriteLine("(7) MainWindowViewModel: " + ex.Message);
+        Diag.UpdateLog(false,"(7) MainWindowViewModel: " + ex.Message);
 
       }
     }
@@ -69,11 +69,17 @@ namespace DemoApp.ViewModel
 
         try
         {
-          Debug.WriteLine("(11) ReadOnlyCollection<CommandViewModel> Commands: " + _commands.Count.ToString());
+          Diag.UpdateLog(false,"(11) ReadOnlyCollection<CommandViewModel> Commands: " + _commands.Count.ToString());
+          foreach(CommandViewModel c in _commands)
+          {
+            Diag.UpdateLog(false, "    " +    c.DisplayName);
+
+          }
+          
         }
         catch (Exception ex)
         {
-          Debug.WriteLine("(11) ReadOnlyCollection<CommandViewModel> Commands: " + ex.Message);
+          Diag.UpdateLog(false,"(11) ReadOnlyCollection<CommandViewModel> Commands: " + ex.Message);
 
         }
         return _commands;
@@ -102,15 +108,15 @@ namespace DemoApp.ViewModel
       
 try
       {
-        Debug.WriteLine("(27) List<CommandViewModel> CreateCommands()" );
+        Diag.UpdateLog(false,"(27) List<CommandViewModel> CreateCommands()" );
         foreach (CommandViewModel c in m)
         {
-          Debug.WriteLine("  " + c.DisplayName  );
+          Diag.UpdateLog(false,"  " + c.DisplayName  );
         }
       }
       catch (Exception ex)
       {
-        Debug.WriteLine("(27)List<CommandViewModel> CreateCommands() " + ex.Message);
+        Diag.UpdateLog(false,"(27)List<CommandViewModel> CreateCommands() " + ex.Message);
 
       }
 

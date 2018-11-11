@@ -15,7 +15,7 @@ namespace DemoApp.ViewModel
 
     protected ViewModelBase()
     {
-      System.Diagnostics.PresentationTraceSources.DataBindingSource.Switch.Level = System.Diagnostics.SourceLevels.Critical;
+      Diag.DataBindingPresentation();
     }
 
     #endregion // Constructor
@@ -32,11 +32,11 @@ namespace DemoApp.ViewModel
       get;
       protected set;
     }
-    public virtual string ControlPanelCommandsText
-    {
-      get;
-      protected set;
-    }
+    //public virtual string ControlPanelCommandsText
+    //{
+    //  get;
+    //  protected set;
+    //}
     #endregion // DisplayName
 
 
@@ -134,10 +134,10 @@ namespace DemoApp.ViewModel
     {
       string msg = string.Format("{0} ({1}) ({2}) Finalized", GetType().Name, DisplayName, GetHashCode());
       try
-      { Debug.WriteLine("(2) ~ViewModelBase(): " + msg); }
+      { Diag.UpdateLog(false,"(2) ~ViewModelBase(): " + msg); }
       catch (Exception ex)
       {
-        Debug.WriteLine("(2) ~ViewModelBase(): " + ex.Message);
+        Diag.UpdateLog(false,"(2) ~ViewModelBase(): " + ex.Message);
 
       }
     }

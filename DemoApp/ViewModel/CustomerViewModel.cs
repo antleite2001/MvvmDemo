@@ -28,7 +28,7 @@ namespace DemoApp.ViewModel
 
     public CustomerViewModel(Customer customer, CustomerRepository customerRepository)
     {
-      System.Diagnostics.PresentationTraceSources.DataBindingSource.Switch.Level = System.Diagnostics.SourceLevels.Critical;
+      Diag.DataBindingPresentation();
 
       if (customer == null)
       {
@@ -217,11 +217,11 @@ namespace DemoApp.ViewModel
         }
         try
         {
-          Debug.WriteLine("(12) public ICommand SaveCommand: "  );
+          Diag.UpdateLog(false,"(12) public ICommand SaveCommand: "  );
         }
         catch (Exception ex)
         {
-          Debug.WriteLine("(12) public ICommand SaveCommand: " + ex.Message);
+          Diag.UpdateLog(false,"(12) public ICommand SaveCommand: " + ex.Message);
 
         }
         return _saveCommand;

@@ -27,7 +27,7 @@ namespace DemoApp.ViewModel
 
     public AllCustomersViewModel(CustomerRepository customerRepository)
     {
-      System.Diagnostics.PresentationTraceSources.DataBindingSource.Switch.Level = System.Diagnostics.SourceLevels.Critical;
+      Diag.DataBindingPresentation();
 
       if (customerRepository == null)
       {

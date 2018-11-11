@@ -10,7 +10,8 @@ namespace DemoApp
   {
     static App()
     {
-      System.Diagnostics.PresentationTraceSources.DataBindingSource.Switch.Level = System.Diagnostics.SourceLevels.Critical;
+      Diag.UpdateLog(true,"");
+      Diag.DataBindingPresentation();
       // This code is used to test the app when using other cultures.
       //
       //System.Threading.Thread.CurrentThread.CurrentCulture =

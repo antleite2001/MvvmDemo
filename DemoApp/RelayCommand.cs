@@ -28,15 +28,15 @@ namespace DemoApp
     /// <param name="execute">The execution logic.</param>
     public RelayCommand(Action<object> execute) : this(execute, null)
     {
-      System.Diagnostics.PresentationTraceSources.DataBindingSource.Switch.Level = System.Diagnostics.SourceLevels.Critical;
+      Diag.DataBindingPresentation();
 
       try
       {
-        Debug.WriteLine("(4) RelayCommand(): " + execute.ToString());
+        Diag.UpdateLog(false,"(4) RelayCommand(): " + execute.ToString());
       }
       catch (Exception ex)
       {
-        Debug.WriteLine("(4) RelayCommand(): " + ex.Message);
+        Diag.UpdateLog(false,"(4) RelayCommand(): " + ex.Message);
 
       }
 
@@ -49,7 +49,7 @@ namespace DemoApp
     /// <param name="canExecute">The execution status logic.</param>
     public RelayCommand(Action<object> execute, Predicate<object> canExecute)
     {
-      System.Diagnostics.PresentationTraceSources.DataBindingSource.Switch.Level = System.Diagnostics.SourceLevels.Critical;
+      Diag.DataBindingPresentation();
 
       if (execute == null)
       {
@@ -60,11 +60,11 @@ namespace DemoApp
       _canExecute = canExecute;
       try
       {
-        Debug.WriteLine("(6) RelayCommand(): " + _execute.Method.ToString() + "  " + _execute.Target.ToString());
+        Diag.UpdateLog(false,"(6) RelayCommand(): " + _execute.Method.ToString() + "  " + _execute.Target.ToString());
       }
       catch (Exception ex)
       {
-        Debug.WriteLine("(6) RelayCommand(): " + ex.Message);
+        Diag.UpdateLog(false,"(6) RelayCommand(): " + ex.Message);
 
       }
 

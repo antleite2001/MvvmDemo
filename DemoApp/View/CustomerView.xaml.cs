@@ -5,7 +5,7 @@
     public CustomerView()
     {
       InitializeComponent();
-      System.Diagnostics.PresentationTraceSources.DataBindingSource.Switch.Level = System.Diagnostics.SourceLevels.Critical;
+      Diag.DataBindingPresentation();
     }
   }
 }

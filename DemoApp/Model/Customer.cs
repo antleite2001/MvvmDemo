@@ -18,7 +18,7 @@ namespace DemoApp.Model
 
     public static Customer CreateNewCustomer()
     {
-      System.Diagnostics.PresentationTraceSources.DataBindingSource.Switch.Level = System.Diagnostics.SourceLevels.Critical;
+      Diag.DataBindingPresentation();
       return new Customer(); //Empty data customer
     }
 
@@ -29,7 +29,7 @@ namespace DemoApp.Model
         bool isCompany,
         string email)
     {
-      System.Diagnostics.PresentationTraceSources.DataBindingSource.Switch.Level = System.Diagnostics.SourceLevels.Critical;
+      Diag.DataBindingPresentation();
       return new Customer
       {
         TotalSales = totalSales,
@@ -42,7 +42,7 @@ namespace DemoApp.Model
 
     protected Customer()
     {
-      System.Diagnostics.PresentationTraceSources.DataBindingSource.Switch.Level = System.Diagnostics.SourceLevels.Critical;
+      Diag.DataBindingPresentation();
     }
 
     #endregion // Creation

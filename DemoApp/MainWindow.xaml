@@ -1,16 +1,23 @@
-﻿<Window
+﻿<!--https://www.c-sharpcorner.com/UploadFile/41e70f/fallbackvalue-in-wpf/-->
+<Window
   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
   xmlns:vm="clr-namespace:DemoApp.ViewModel"
   xmlns:diag="clr-namespace:System.Diagnostics;assembly=WindowsBase"
-   xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" 
+  xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" 
   x:Class="DemoApp.MainWindow"
-   FontSize="13" 
+  FontSize="13" 
   FontFamily="Verdana"
   MinWidth="650" MinHeight="420"
   
   Title="{Binding DisplayName, 
-   PresentationTraceSources.TraceLevel=Medium}"  
+          Mode=OneTime, 
+          UpdateSourceTrigger=PropertyChanged,           
+          TargetNullValue='Error: Title Binding Wrong Value',
+          FallbackValue='Error: Title Binding Wrong Value',
+          PresentationTraceSources.TraceLevel=High
+  }"  
   Width="900" Height="420"
   WindowStartupLocation="CenterScreen" Background="#FFA43434"
   >
@@ -24,9 +31,10 @@
     <DockPanel x:Name="docPanelMenu" DockPanel.Dock="Top" KeyboardNavigation.TabNavigation="None"  >
       <Menu x:Name="menu" KeyboardNavigation.TabNavigation="Cycle">
         <MenuItem Header="_File">
-          <MenuItem Header="E_xit" 
-                    Command="{Binding CloseCommand, 
-            PresentationTraceSources.TraceLevel=Medium}" d:IsLocked="True" />
+          <MenuItem x:Name="E_xit" Header="E_xit" 
+                    Command="{Binding CloseCommand,             
+                    PresentationTraceSources.TraceLevel=High
+            }" d:IsLocked="True" />
         </MenuItem>
         <MenuItem Header="_Edit" />
         <MenuItem Header="_Options" />
@@ -47,13 +55,18 @@
               Background="DodgerBlue" Margin="3"
         Grid.Column="0"
         Style="{StaticResource MainBorderStyle}" >
+
         <HeaderedContentControl 
           x:Name="hccControlPanel" 
           Header="Control Panel"
-          Content="{Binding ControlPanelCommands, 
-          PresentationTraceSources.TraceLevel=High}"
+          Content="{Binding ControlPanelCommands,
+          Mode=OneTime,  
+          UpdateSourceTrigger=PropertyChanged,
+          PresentationTraceSources.TraceLevel=High
+           }"
           ContentTemplate="{StaticResource ControlPanelCommandsTemplate}"          
           Style="{StaticResource MainHCCStyle}"/>
+
       </Border>
 
       <Border x:Name="borderWorkSpaces" 

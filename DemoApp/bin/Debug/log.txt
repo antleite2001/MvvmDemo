@@ -1,0 +1,22 @@
+(1) CustomerRepository(): 12
+(7) MainWindowViewModel: MVVM Demo App DemoApp.DataAccess.CustomerRepository
+(6) RelayCommand(): Void <get_CloseCommand>b__3_0(System.Object)  DemoApp.ViewModel.MainWindowViewModel
+(4) RelayCommand(): System.Action`1[System.Object]
+(13) public ICommand CloseCommand 
+(6) RelayCommand(): Void <CreateCommands>b__6_0(System.Object)  DemoApp.ViewModel.MainWindowViewModel
+(4) RelayCommand(): System.Action`1[System.Object]
+(5) CommandViewModel: View all customers  DemoApp.RelayCommand
+(6) RelayCommand(): Void <CreateCommands>b__6_1(System.Object)  DemoApp.ViewModel.MainWindowViewModel
+(4) RelayCommand(): System.Action`1[System.Object]
+(5) CommandViewModel: Create new customer  DemoApp.RelayCommand
+(6) RelayCommand(): Void <CreateCommands>b__6_2(System.Object)  DemoApp.ViewModel.MainWindowViewModel
+(4) RelayCommand(): System.Action`1[System.Object]
+(5) CommandViewModel: EXIT BUTTON  DemoApp.RelayCommand
+(27) List<CommandViewModel> CreateCommands()
+  View all customers
+  Create new customer
+  EXIT BUTTON
+(11) ReadOnlyCollection<CommandViewModel> Commands: 3
+    View all customers
+    Create new customer
+    EXIT BUTTON

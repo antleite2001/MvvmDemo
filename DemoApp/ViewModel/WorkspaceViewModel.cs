@@ -21,7 +21,7 @@ namespace DemoApp.ViewModel
 
     protected WorkspaceViewModel()
     {
-      System.Diagnostics.PresentationTraceSources.DataBindingSource.Switch.Level = System.Diagnostics.SourceLevels.Critical;
+      Diag.DataBindingPresentation();
 
     }
 
@@ -44,12 +44,11 @@ namespace DemoApp.ViewModel
 
         try
         {
-          Debug.WriteLine("(13) public ICommand CloseCommand ");
+          Diag.UpdateLog(false,"(13) public ICommand CloseCommand ");
         }
         catch (Exception ex)
         {
-          Debug.WriteLine("(13)public ICommand CloseCommand " + ex.Message);
-
+          Diag.UpdateLog(false,"(13)public ICommand CloseCommand " + ex.Message);
         }
         return _closeCommand;
       }
