@@ -9,7 +9,6 @@ using System.ComponentModel;
 using System.Diagnostics;
 using System.Linq;
 using System.Windows.Data;
-using System.Windows.Input;
 
 
 namespace DemoApp.ViewModel
@@ -56,7 +55,7 @@ namespace DemoApp.ViewModel
 
 
 
-    
+
 
 
 
@@ -78,7 +77,7 @@ namespace DemoApp.ViewModel
 
         try
         {
-          Diag.UpdateLog(false, "(11) ReadOnlyCollection<CommandViewModel> Commands: " + _commands.Count.ToString());
+          Diag.UpdateLog(false, "(11) CreateROCControlPanelCommands: " + _commands.Count.ToString());
           foreach (CommandViewModel c in _commands)
           {
             Diag.UpdateLog(false, "    " + c.ViewModelBaseInstanceName);
@@ -87,7 +86,7 @@ namespace DemoApp.ViewModel
         }
         catch (Exception ex)
         {
-          Diag.UpdateLog(false, "(11) ReadOnlyCollection<CommandViewModel> Commands: " + ex.Message);
+          Diag.UpdateLog(false, "(11) CreateROCControlPanelCommands: " + ex.Message);
         }
         return _commands;
       }
@@ -109,7 +108,7 @@ namespace DemoApp.ViewModel
                 //TODO
                 new CommandViewModel(
                     Strings.MainWindowViewModel_Command_ExitButton,
-                    new RelayCommand(param => ExitCommand()))
+                     new RelayCommand(param => OnRequestClose()))
             };
 
 
@@ -133,6 +132,36 @@ namespace DemoApp.ViewModel
     }
 
     #endregion // Commands
+
+
+    #region RequestClose [event]
+
+
+
+    /// <summary>
+    /// Raised when this workspace should be removed from the UI.
+    /// </summary>
+    public event EventHandler RequestCloseX;
+
+    private void OnRequestClose()
+    {
+      try
+      {
+        Diag.UpdateLog(false, "(80) private void OnRequestClose() ");
+      }
+      catch (Exception ex)
+      {
+        Diag.UpdateLog(false, "(80) private void OnRequestClose()  " + ex.Message);
+      }
+      RequestCloseX?.Invoke(this, EventArgs.Empty);
+    }
+
+    #endregion // RequestClose [event]
+
+
+    
+
+
 
     #region Workspaces
 
@@ -191,29 +220,7 @@ namespace DemoApp.ViewModel
       SetActiveWorkspace(workspace);
     }
 
-    //TODO
-    private void ExitCommand()
-    {
 
-      try
-      {
-        
-        Diag.UpdateLog(false, "(47) ExitCommand()");
-        CloseCommand.Execute(null);
-         
-         
-           
-         
-      }
-      catch (Exception ex)
-      {
-        Diag.UpdateLog(false, "(47) ExitCommand()" + ex.Message);
-
-      }
-
-
-       
-    }
 
     private void ShowAllCustomers()
     {

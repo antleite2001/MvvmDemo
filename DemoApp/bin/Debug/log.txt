@@ -16,11 +16,12 @@
   View all customers
   Create new customer
   EXIT BUTTON
-(11) ReadOnlyCollection<CommandViewModel> Commands: 3
+(11) CreateROCControlPanelCommands: 3
     View all customers
     Create new customer
     EXIT BUTTON
 (36) private void OnRequestClose() 
+(52) handler = delegate 
 (2) ~ViewModelBase(): CommandViewModel (EXIT BUTTON) (47891719) Finalized
 (2) ~ViewModelBase(): CommandViewModel (Create new customer) (43332040) Finalized
 (2) ~ViewModelBase(): CommandViewModel (View all customers) (60068066) Finalized

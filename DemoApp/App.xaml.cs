@@ -58,6 +58,7 @@ namespace DemoApp
       };
 
       mainWindowViewModel.RequestClose += handler;
+      mainWindowViewModel.RequestCloseX += handler;
 
       // Allow all controls in the window to 
       // bind to the ViewModel by setting the 
