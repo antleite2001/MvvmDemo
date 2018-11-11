@@ -32,11 +32,11 @@ namespace DemoApp
 
       try
       {
-        Diag.UpdateLog(false,"(4) RelayCommand(): " + execute.ToString());
+        Diag.UpdateLog(false, "(4) RelayCommand(): " + execute.ToString());
       }
       catch (Exception ex)
       {
-        Diag.UpdateLog(false,"(4) RelayCommand(): " + ex.Message);
+        Diag.UpdateLog(false, "(4) RelayCommand(): " + ex.Message);
 
       }
 
@@ -58,14 +58,15 @@ namespace DemoApp
 
       _execute = execute;
       _canExecute = canExecute;
+
+
       try
       {
-        Diag.UpdateLog(false,"(6) RelayCommand(): " + _execute.Method.ToString() + "  " + _execute.Target.ToString());
+        Diag.UpdateLog(false, "(6) RelayCommand(): " +    _execute.Method.ToString() + "  " + _execute.Target.ToString());
       }
       catch (Exception ex)
       {
-        Diag.UpdateLog(false,"(6) RelayCommand(): " + ex.Message);
-
+        Diag.UpdateLog(false, "(6) RelayCommand(): " + ex.Message);
       }
 
     }

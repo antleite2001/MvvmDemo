@@ -17,7 +17,7 @@ namespace DemoApp.ViewModel
         throw new ArgumentNullException("command");
       }
 
-      base.DisplayName = displayName;
+      base.ViewModelBaseInstanceName = displayName;
       //base.ControlPanelCommandsText= displayName;
       ControlPanelCommandInvoked = command;
 

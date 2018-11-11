@@ -65,11 +65,15 @@ namespace DemoApp.ViewModel
 
     private void OnRequestClose()
     {
-      EventHandler handler = RequestClose;
-      if (handler != null)
-      {
-        handler(this, EventArgs.Empty);
-      }
+      try
+        {
+          Diag.UpdateLog(false,"(36) private void OnRequestClose() ");
+        }
+        catch (Exception ex)
+        {
+          Diag.UpdateLog(false,"(36) private void OnRequestClose()  " + ex.Message);
+        }
+      RequestClose?.Invoke(this, EventArgs.Empty);
     }
 
     #endregion // RequestClose [event]

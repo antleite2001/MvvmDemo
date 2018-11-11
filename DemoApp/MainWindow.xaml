@@ -11,7 +11,7 @@
   FontFamily="Verdana"
   MinWidth="650" MinHeight="420"
   
-  Title="{Binding DisplayName, 
+  Title="{Binding ViewModelBaseInstanceName, 
           Mode=OneTime, 
           UpdateSourceTrigger=PropertyChanged,           
           TargetNullValue='Error: Title Binding Wrong Value',
@@ -32,7 +32,10 @@
       <Menu x:Name="menu" KeyboardNavigation.TabNavigation="Cycle">
         <MenuItem Header="_File">
           <MenuItem x:Name="E_xit" Header="E_xit" 
-                    Command="{Binding CloseCommand,             
+                    Command="{
+            Binding CloseCommand,     
+                    Mode=OneTime,    
+                    UpdateSourceTrigger=PropertyChanged, 
                     PresentationTraceSources.TraceLevel=High
             }" d:IsLocked="True" />
         </MenuItem>

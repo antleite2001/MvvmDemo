@@ -7,7 +7,7 @@ namespace DemoApp.ViewModel
   /// <summary>
   /// Base class for all ViewModel classes in the application.
   /// It provides support for property change notifications 
-  /// and has a DisplayName property.  This class is abstract.
+  /// and has a ViewModelBaseInstanceName property.  This class is abstract.
   /// </summary>
   public abstract class ViewModelBase : INotifyPropertyChanged, IDisposable
   {
@@ -20,27 +20,22 @@ namespace DemoApp.ViewModel
 
     #endregion // Constructor
 
-    #region DisplayName
+    #region ViewModelBaseInstanceName
 
     /// <summary>
-    /// Returns the user-friendly name of this object.
+    /// Returns the user-friendly name of this Instance.
     /// Child classes can set this property to a new value,
     /// or override it to determine the value on-demand.
     /// </summary>
-    public virtual string DisplayName
+    public virtual string ViewModelBaseInstanceName
     {
       get;
       protected set;
     }
-    //public virtual string ControlPanelCommandsText
-    //{
-    //  get;
-    //  protected set;
-    //}
-    #endregion // DisplayName
+    #endregion // ViewModelBaseInstanceName
 
 
-     
+
 
 
 
@@ -132,13 +127,14 @@ namespace DemoApp.ViewModel
     /// </summary>
     ~ViewModelBase()
     {
-      string msg = string.Format("{0} ({1}) ({2}) Finalized", GetType().Name, DisplayName, GetHashCode());
+      string msg = string.Format($"{GetType().Name} ({ViewModelBaseInstanceName}) ({GetHashCode()}) Finalized");
       try
-      { Diag.UpdateLog(false,"(2) ~ViewModelBase(): " + msg); }
+      {
+        Diag.UpdateLog(false, "(2) ~ViewModelBase(): " + msg);
+      }
       catch (Exception ex)
       {
-        Diag.UpdateLog(false,"(2) ~ViewModelBase(): " + ex.Message);
-
+        Diag.UpdateLog(false, "(2) ~ViewModelBase(): " + ex.Message);
       }
     }
 #endif

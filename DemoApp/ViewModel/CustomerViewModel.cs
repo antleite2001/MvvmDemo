@@ -163,7 +163,7 @@ namespace DemoApp.ViewModel
       }
     }
 
-    public override string DisplayName
+    public override string ViewModelBaseInstanceName
     {
       get
       {
@@ -247,7 +247,7 @@ namespace DemoApp.ViewModel
         _customerRepository.AddCustomer(_customer);
       }
 
-      base.OnPropertyChanged("DisplayName");
+      base.OnPropertyChanged("ViewModelBaseInstanceName");
     }
 
     #endregion // Public Methods

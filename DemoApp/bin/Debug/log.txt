@@ -20,3 +20,7 @@
     View all customers
     Create new customer
     EXIT BUTTON
+(2) ~ViewModelBase(): CommandViewModel (EXIT BUTTON) (47891719) Finalized
+(2) ~ViewModelBase(): CommandViewModel (Create new customer) (43332040) Finalized
+(2) ~ViewModelBase(): CommandViewModel (View all customers) (60068066) Finalized
+(2) ~ViewModelBase(): MainWindowViewModel (MVVM Demo App) (7563067) Finalized

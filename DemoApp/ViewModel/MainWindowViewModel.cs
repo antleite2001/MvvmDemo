@@ -33,14 +33,14 @@ namespace DemoApp.ViewModel
       Diag.DataBindingPresentation();
 
 
-      base.DisplayName = Strings.MainWindowViewModel_DisplayName;
+      base.ViewModelBaseInstanceName = Strings.MainWindowViewModel_DisplayName;
 
       _customerRepository = new CustomerRepository(customerDataFile);
 
 
       try
       {
-        Diag.UpdateLog(false,"(7) MainWindowViewModel: " + base.DisplayName + " " + _customerRepository.ToString());
+        Diag.UpdateLog(false,"(7) MainWindowViewModel: " + base.ViewModelBaseInstanceName + " " + _customerRepository.ToString());
       }
       catch (Exception ex)
       {
@@ -72,15 +72,13 @@ namespace DemoApp.ViewModel
           Diag.UpdateLog(false,"(11) ReadOnlyCollection<CommandViewModel> Commands: " + _commands.Count.ToString());
           foreach(CommandViewModel c in _commands)
           {
-            Diag.UpdateLog(false, "    " +    c.DisplayName);
-
+            Diag.UpdateLog(false, "    " +    c.ViewModelBaseInstanceName);
           }
           
         }
         catch (Exception ex)
         {
           Diag.UpdateLog(false,"(11) ReadOnlyCollection<CommandViewModel> Commands: " + ex.Message);
-
         }
         return _commands;
       }
@@ -111,7 +109,7 @@ try
         Diag.UpdateLog(false,"(27) List<CommandViewModel> CreateCommands()" );
         foreach (CommandViewModel c in m)
         {
-          Diag.UpdateLog(false,"  " + c.DisplayName  );
+          Diag.UpdateLog(false,"  " + c.ViewModelBaseInstanceName  );
         }
       }
       catch (Exception ex)
