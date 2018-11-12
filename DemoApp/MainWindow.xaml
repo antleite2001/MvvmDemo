@@ -6,6 +6,7 @@
   xmlns:diag="clr-namespace:System.Diagnostics;assembly=WindowsBase"
   xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
   xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:View="clr-namespace:DemoApp.View" mc:Ignorable="d" 
+  xmlns:controls="clr-namespace:DemoApp.UserControls"
   x:Class="DemoApp.MainWindow"
     
   FontSize="13" 
@@ -13,7 +14,7 @@
   MinWidth="650" MinHeight="420"
   
   Title="{Binding ViewModelBaseInstanceName, FallbackValue=Error: Title Binding Wrong Value, Mode=OneTime, TargetNullValue=Error: Title Binding Wrong Value, PresentationTraceSources.TraceLevel=High, UpdateSourceTrigger=PropertyChanged}"  
-  Width="900" Height="438.621"
+  Width="1200" Height="438.621"
   WindowStartupLocation="CenterScreen" Background="#FFA43434"
   >
 
@@ -60,9 +61,12 @@
 
       </Border>
       <Border Grid.Column="1" >
-        <!--<pb:UserControl1 Height="100" Width="200"   />-->
+        <controls:ControleListagemDiretorio 
+          x:Name="listaDiretorio" 
+          Width="180"  >
+        </controls:ControleListagemDiretorio>
       </Border>
-      <Border x:Name="borderWorkSpaces" 
+      <Border   x:Name="borderWorkSpaces" 
               Background="Aqua" Margin="3"
         Grid.Column="2" 
         Style="{StaticResource MainBorderStyle}">
