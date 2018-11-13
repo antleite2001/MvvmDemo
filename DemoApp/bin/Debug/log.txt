@@ -22,7 +22,9 @@
     View all customers
     Create new customer
     Exit
-(14) DemoApp.ViewModel.CommandViewModel; Finalize;   CommandViewModel (Exit) (41731733) Finalized
-(14) DemoApp.ViewModel.CommandViewModel; Finalize;   CommandViewModel (Create new customer) (58328727) Finalized
-(14) DemoApp.ViewModel.CommandViewModel; Finalize;   CommandViewModel (View all customers) (16578980) Finalized
-(14) DemoApp.ViewModel.MainWindowViewModel; Finalize;   MainWindowViewModel (MVVM Demo App) (57712780) Finalized
+(13) DemoApp.ViewModel.MainWindowViewModel; OnMainWindowViewModelRequestClose
+(1) DemoApp.App; <OnStartup>b__0
+(14) DemoApp.ViewModel.CommandViewModel; Finalize;   CommandViewModel (Exit) (17911681) Finalized
+(14) DemoApp.ViewModel.CommandViewModel; Finalize;   CommandViewModel (Create new customer) (22118023) Finalized
+(14) DemoApp.ViewModel.MainWindowViewModel; Finalize;   MainWindowViewModel (MVVM Demo App) (39451090) Finalized
+(14) DemoApp.ViewModel.CommandViewModel; Finalize;   CommandViewModel (View all customers) (27006480) Finalized

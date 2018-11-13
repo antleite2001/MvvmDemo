@@ -5,8 +5,56 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:DemoApp.UserControls"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
-            
-    </Grid>
+             Height="30" 
+             Width="60" 
+             Background="Blue"  >
+
+  <StackPanel  x:Name="StackPanelWindow" Width="80" Height="60" 
+               HorizontalAlignment="Center" VerticalAlignment="Center" >
+
+    <Button x:Name="btn1" 
+            Command="{Binding Path=CommandOne}"
+            Height="60" Width="80" 
+              Background="Transparent" BorderBrush="{x:Null}"
+            HorizontalAlignment="Center" 
+            VerticalAlignment="Center" Margin="0,0,0,0" >
+
+      <Border Background="{Binding BKColor,
+              TargetNullValue='Brown',
+              FallbackValue='Green'}" 
+              CornerRadius="10" 
+              Height="20" 
+                Width="60"  
+              HorizontalAlignment="Center"            
+              VerticalAlignment="Center"  >
+
+        <Button x:Name="btn2" 
+                Command="{Binding Path=CommandOne}" 
+                Height="20" Width="20" 
+              Background="Transparent" 
+                BorderBrush="{x:Null}" 
+                HorizontalAlignment="Right" 
+                VerticalAlignment="Center"  >
+
+          <Border Background="Black"  
+              CornerRadius="15" 
+              Height="13" 
+                Width="13" HorizontalAlignment="Center" VerticalAlignment="Center"  />
+
+        </Button>
+      </Border>
+
+    </Button>
+
+
+
+
+
+
+
+
+
+
+
+  </StackPanel>
 </UserControl>

@@ -6,7 +6,7 @@
   xmlns:diag="clr-namespace:System.Diagnostics;assembly=WindowsBase"
   xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
   xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:View="clr-namespace:DemoApp.View" mc:Ignorable="d" 
-  xmlns:controls="clr-namespace:DemoApp.UserControls"
+  xmlns:listdir="clr-namespace:DemoApp.UserControls"
   x:Class="DemoApp.MainWindow"
     
   FontSize="13" 
@@ -14,7 +14,7 @@
   MinWidth="650" MinHeight="420"
   
   Title="{Binding ViewModelBaseInstanceName, FallbackValue=Error: Title Binding Wrong Value, Mode=OneTime, TargetNullValue=Error: Title Binding Wrong Value, PresentationTraceSources.TraceLevel=High, UpdateSourceTrigger=PropertyChanged}"  
-  Width="1200" Height="438.621"
+  Width="1200" Height="440"
   WindowStartupLocation="CenterScreen" Background="#FFA43434"
   >
 
@@ -30,7 +30,8 @@
       <Menu x:Name="menu" KeyboardNavigation.TabNavigation="Cycle">
         <MenuItem Header="_File">
           <MenuItem x:Name="E_xit" Header="E_xit" 
-                    Command="{Binding CloseCommand, Mode=OneTime, PresentationTraceSources.TraceLevel=High, UpdateSourceTrigger=PropertyChanged}" d:IsLocked="True" />
+                    Command="{Binding CloseCommand, 
+            Mode=OneTime, PresentationTraceSources.TraceLevel=High, UpdateSourceTrigger=PropertyChanged}" d:IsLocked="True" />
         </MenuItem>
         <MenuItem Header="_Edit" />
         <MenuItem Header="_Options" />
@@ -46,7 +47,11 @@
         <ColumnDefinition Width="10" />
         <ColumnDefinition x:Name="Buttons" Width="170" />
       </Grid.ColumnDefinitions>
+      <Grid.RowDefinitions>
 
+        <RowDefinition Height="200"/>
+        <RowDefinition Height="200"/>
+      </Grid.RowDefinitions>
       <Border x:Name="borderControlPanel" 
               Background="DodgerBlue" Margin="3"
         Grid.Column="0"
@@ -61,10 +66,20 @@
 
       </Border>
       <Border Grid.Column="1" >
-        <controls:ControleListagemDiretorio 
+        <listdir:ControleListagemDiretorio 
           x:Name="listaDiretorio" 
-          Width="180"  >
-        </controls:ControleListagemDiretorio>
+          Width="180" Height="200" VerticalAlignment="Top">
+        </listdir:ControleListagemDiretorio>
+      </Border>
+
+      <Border x:Name="borderToggle" 
+              Height="100"  Width="65"
+              Grid.Column="0"  
+              Grid.Row="1">
+        <listdir:ToggleButton Height="50" Width="65"
+          x:Name="Toggle" HorizontalAlignment="Center"
+             VerticalAlignment="Top" Margin="0,25,0,0">
+        </listdir:ToggleButton>
       </Border>
       <Border   x:Name="borderWorkSpaces" 
               Background="Aqua" Margin="3"
@@ -84,7 +99,10 @@
         <HeaderedContentControl x:Name="hccButtons" 
                                 Header="Buttons"
           Content="{Binding Workspaces, PresentationTraceSources.TraceLevel=Medium}"           
-          Style="{StaticResource MainHCCStyle}"/>
+          Style="{StaticResource MainHCCStyle}">
+          
+        </HeaderedContentControl>
+        
       </Border>
     </Grid>
   </DockPanel>
