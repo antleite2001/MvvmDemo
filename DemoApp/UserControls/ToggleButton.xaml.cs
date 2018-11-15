@@ -25,5 +25,10 @@ namespace DemoApp.UserControls
         {
             InitializeComponent();
         }
+
+    private void ToggleClick(object sender, RoutedEventArgs e)
+    {
+
     }
+  }
 }

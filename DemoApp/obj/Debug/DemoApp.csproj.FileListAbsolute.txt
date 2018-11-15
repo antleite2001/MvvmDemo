@@ -84,4 +84,3 @@ C:\Users\ACVL\Documents\WPF\MvvmDemoAppJoshSmith\MvvmDemoApp_1\DemoApp\obj\Debug
 C:\Users\ACVL\Documents\WPF\MvvmDemoAppJoshSmith\MvvmDemoApp_1\DemoApp\obj\Debug\UserControls\ToggleButton.g.cs
 C:\Users\ACVL\Documents\WPF\MvvmDemoAppJoshSmith\MvvmDemoApp_1\DemoApp\obj\Debug\UserControls\ControleListagemDiretorio.baml
 C:\Users\ACVL\Documents\WPF\MvvmDemoAppJoshSmith\MvvmDemoApp_1\DemoApp\obj\Debug\UserControls\ToggleButton.baml
-C:\Users\ACVL\Documents\WPF\MvvmDemoAppJoshSmith\MvvmDemoApp_1\DemoApp\obj\Debug\DemoApp.csprojAssemblyReference.cache

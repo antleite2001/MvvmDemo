@@ -24,7 +24,3 @@
     Exit
 (13) DemoApp.ViewModel.MainWindowViewModel; OnMainWindowViewModelRequestClose
 (1) DemoApp.App; <OnStartup>b__0
-(14) DemoApp.ViewModel.CommandViewModel; Finalize;   CommandViewModel (Exit) (41731733) Finalized
-(14) DemoApp.ViewModel.CommandViewModel; Finalize;   CommandViewModel (Create new customer) (58328727) Finalized
-(14) DemoApp.ViewModel.CommandViewModel; Finalize;   CommandViewModel (View all customers) (16578980) Finalized
-(14) DemoApp.ViewModel.MainWindowViewModel; Finalize;   MainWindowViewModel (MVVM Demo App) (57712780) Finalized

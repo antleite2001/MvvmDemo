@@ -26,7 +26,7 @@ namespace DemoApp.ViewModel
         /// Child classes can set this property to a new value,
         /// or override it to determine the value on-demand.
         /// </summary>
-        public virtual string DisplayName { get; protected set; }
+        public virtual string ViewModelBaseInstanceName { get; protected set; }
 
         #endregion // DisplayName
 
@@ -114,7 +114,7 @@ namespace DemoApp.ViewModel
         /// </summary>
         ~ViewModelBase()
         {
-            string msg = string.Format("{0} ({1}) ({2}) Finalized", this.GetType().Name, this.DisplayName, this.GetHashCode());
+            string msg = string.Format("{0} ({1}) ({2}) Finalized", this.GetType().Name, this.ViewModelBaseInstanceName, this.GetHashCode());
             System.Diagnostics.Debug.WriteLine(msg);
         }
 #endif

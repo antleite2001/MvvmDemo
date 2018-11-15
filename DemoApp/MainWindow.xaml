@@ -6,7 +6,7 @@
   xmlns:diag="clr-namespace:System.Diagnostics;assembly=WindowsBase"
   xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
   xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:View="clr-namespace:DemoApp.View" mc:Ignorable="d" 
-  xmlns:listdir="clr-namespace:DemoApp.UserControls"
+  xmlns:uc="clr-namespace:DemoApp.UserControls"
   x:Class="DemoApp.MainWindow"
     
   FontSize="13" 
@@ -66,20 +66,20 @@
 
       </Border>
       <Border Grid.Column="1" >
-        <listdir:ControleListagemDiretorio 
+        <uc:ControleListagemDiretorio 
           x:Name="listaDiretorio" 
           Width="180" Height="200" VerticalAlignment="Top">
-        </listdir:ControleListagemDiretorio>
+        </uc:ControleListagemDiretorio>
       </Border>
 
       <Border x:Name="borderToggle" 
               Height="100"  Width="65"
               Grid.Column="0"  
               Grid.Row="1">
-        <listdir:ToggleButton Height="50" Width="65"
+        <uc:ToggleButton Height="102.5" Width="156.5"
           x:Name="Toggle" HorizontalAlignment="Center"
-             VerticalAlignment="Top" Margin="0,25,0,0">
-        </listdir:ToggleButton>
+             VerticalAlignment="Top" Margin="0,-27.5,-91.5,0">
+        </uc:ToggleButton>
       </Border>
       <Border   x:Name="borderWorkSpaces" 
               Background="Aqua" Margin="3"
@@ -100,9 +100,9 @@
                                 Header="Buttons"
           Content="{Binding Workspaces, PresentationTraceSources.TraceLevel=Medium}"           
           Style="{StaticResource MainHCCStyle}">
-          
+
         </HeaderedContentControl>
-        
+
       </Border>
     </Grid>
   </DockPanel>
