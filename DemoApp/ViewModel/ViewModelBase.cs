@@ -88,7 +88,7 @@ namespace DemoApp.ViewModel
     /// Raises this object's PropertyChanged event.
     /// </summary>
     /// <param name="propertyName">The property that has a new value.</param>
-    protected virtual void OnPropertyChanged(string propertyName)
+    protected virtual void PropertyChangedEventHandler(string propertyName)
     {
       VerifyPropertyName(propertyName);
 
@@ -96,7 +96,7 @@ namespace DemoApp.ViewModel
       if (handler != null)
       {
         PropertyChangedEventArgs e = new PropertyChangedEventArgs(propertyName);
-        handler(this, e);
+        handler.Invoke(this, e);
       }
     }
 

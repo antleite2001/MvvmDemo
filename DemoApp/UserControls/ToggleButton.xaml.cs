@@ -19,6 +19,8 @@ namespace DemoApp.UserControls
     /// </summary>
     public partial class ToggleButton : UserControl
     {
+    Thickness LeftSide = new Thickness(-39, 0, 0, 0);
+    Thickness RightSide = new Thickness(0, 0, -39, 0);
         public ToggleButton()
         {
             InitializeComponent();
