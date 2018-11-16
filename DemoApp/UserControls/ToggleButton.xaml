@@ -6,31 +6,60 @@
              xmlns:local="clr-namespace:DemoApp.UserControls"
              mc:Ignorable="d" Height="100" Width="120" 
              Background="Purple">
+  <UserControl.Resources>
+    <ControlTemplate x:Key="MyToggleButtonTemplat" TargetType="{x:Type Button}">
+      <Border x:Name="Bd" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" Padding="{TemplateBinding Padding}" SnapsToDevicePixels="True" d:DesignUseLayoutRounding="True">
+        <ContentPresenter ContentTemplate="{TemplateBinding ContentTemplate}" Content="{TemplateBinding Content}" ContentStringFormat="{TemplateBinding ContentStringFormat}" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" d:DesignUseLayoutRounding="True"/>
+      </Border>
+      <ControlTemplate.Triggers>
+        <!--<Trigger Property="IsMouseOver" Value="True">
+          <Setter Property="BorderBrush" TargetName="Bd" Value="#FF0A246A"/>
+          <Setter Property="Background" TargetName="Bd" Value="#FFB6BDD2"/>
+        </Trigger>-->
+        <!--<Trigger Property="IsKeyboardFocused" Value="True">
+          <Setter Property="BorderBrush" TargetName="Bd" Value="#FF0A246A"/>
+          <Setter Property="Background" TargetName="Bd" Value="#FFB6BDD2"/>
+        </Trigger>-->
+        <!--<Trigger Property="IsPressed" Value="True">
+          <Setter Property="BorderBrush" TargetName="Bd" Value="#FF0A246A"/>
+          <Setter Property="Background" TargetName="Bd" Value="#FF8592B5"/>
+        </Trigger>-->
+        <Trigger Property="IsEnabled" Value="False">
+          <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}"/>
+        </Trigger>
+      </ControlTemplate.Triggers>
+    </ControlTemplate>
+  </UserControl.Resources>
 
-    <Grid Margin="0,0,0,0">
-        <Grid HorizontalAlignment="Center" 
+  <Grid Margin="0,0,0,0">
+    <Grid HorizontalAlignment="Center" 
           Height="60" Width="100" 
           Margin="0,0,0,0" 
           VerticalAlignment="Center"           
           Background="White" >
-             <Rectangle x:Name="Back" HorizontalAlignment="Left"
+      <Rectangle x:Name="Back" HorizontalAlignment="Left"
                    Height="56" Width="96"
                    VerticalAlignment="Top" 
           Margin="2,2,0,0" 
           RadiusY="29" RadiusX="29" 
           Fill="#FFA0A0A0"/>
-            <Ellipse x:Name="dot" Fill="White" 
+      <Ellipse x:Name="dot" Fill="White" 
                  HorizontalAlignment="Center" 
                  Height="50" 
                  VerticalAlignment="Center" 
                  Width="50" />
-            <Button x:Name="t" Click="ToggleClick" Height="20" Width="20" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}"   BorderThickness="0"/>
+      <Button x:Name="t" Click="ToggleClick" Height="30" Width="30" Style="{DynamicResource ButtonStyle1}" 
+              Template="{DynamicResource MyToggleButtonTemplat}"     >B
 
-        </Grid>
+
+
+      </Button>
+
     </Grid>
+  </Grid>
 
 
-    <!--<Grid  x:Name="StackPanelWindow"  
+  <!--<Grid  x:Name="StackPanelWindow"  
                HorizontalAlignment="Center" VerticalAlignment="Center" >
 
     <Button x:Name="btn1" 

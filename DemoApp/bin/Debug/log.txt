@@ -22,5 +22,3 @@
     View all customers
     Create new customer
     Exit
-(13) DemoApp.ViewModel.MainWindowViewModel; OnMainWindowViewModelRequestClose
-(1) DemoApp.App; <OnStartup>b__0
