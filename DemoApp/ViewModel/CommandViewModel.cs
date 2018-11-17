@@ -18,16 +18,18 @@ namespace DemoApp.ViewModel
       }
 
       base.ViewModelBaseInstanceName = displayName;
+      Diag.UpdateLog("(789056\tCommandViewModel( )\tbase.ViewModelBaseInstanceName \t" + base.ViewModelBaseInstanceName);
+
       ControlPanelHyperlinkInvokeCommand = command;
 
 
       try
       {
-        Diag.UpdateLog(false,"(6) "+this.GetType().FullName + "; " +System.Reflection.MethodBase.GetCurrentMethod().Name+ ";   " + displayName + "  " + command.ToString());
+        Diag.UpdateLog("(6)\t"+this.GetType().FullName + ";\t" +System.Reflection.MethodBase.GetCurrentMethod().Name+ ";\t" + displayName + ";\t" + command.ToString());
       }
       catch (Exception ex)
       {
-        Diag.UpdateLog(false,"(6) "+this.GetType().FullName + "; " +System.Reflection.MethodBase.GetCurrentMethod().Name+ ";   " + ex.Message);
+        Diag.UpdateLog("(6)\t"+this.GetType().FullName + ";\t" +System.Reflection.MethodBase.GetCurrentMethod().Name+ ";\t" + ex.Message);
 
       }
     }

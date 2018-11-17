@@ -47,11 +47,7 @@
         <ColumnDefinition Width="10" />
         <ColumnDefinition x:Name="Buttons" Width="170" />
       </Grid.ColumnDefinitions>
-      <Grid.RowDefinitions>
-
-        <RowDefinition Height="200"/>
-        <RowDefinition Height="200"/>
-      </Grid.RowDefinitions>
+       
       <Border x:Name="borderControlPanel" 
               Background="DodgerBlue" Margin="3"
         Grid.Column="0"
@@ -65,21 +61,27 @@
           Style="{StaticResource MainHCCStyle}"/>
 
       </Border>
-      <Border Grid.Column="1" >
-        <uc:ControleListagemDiretorio 
-          x:Name="listaDiretorio" 
-          Width="180" Height="200" VerticalAlignment="Top">
-        </uc:ControleListagemDiretorio>
+      <Border x:Name="border1" 
+              Height="60"  Width="100" Background="Purple"
+              Grid.Column="1" >
+        <Grid>
+            <Rectangle x:Name="Back" HorizontalAlignment="Center" Height="56" Width="96" VerticalAlignment="Center"   Margin="2,2,2,2" 
+                      RadiusY="29" RadiusX="29"  Fill="#FFA0A0A0"/>
+            <Ellipse x:Name="dot" Fill="White"  HorizontalAlignment="Center" Height="50" VerticalAlignment="Center" Width="50" />
+          <Button x:Name="t" Content ="Text"   Height="30" Width="30"     >
+
+          </Button>
+        </Grid>
+
+
+
       </Border>
 
       <Border x:Name="borderToggle" 
               Height="100"  Width="65"
-              Grid.Column="0"  
-              Grid.Row="1">
-        <uc:ToggleButton Height="102.5" Width="156.5"
-          x:Name="Toggle" HorizontalAlignment="Center"
-             VerticalAlignment="Top" Margin="0,-27.5,-91.5,0">
-        </uc:ToggleButton>
+              Grid.Column="4"  
+              Grid.Row="0">
+         
       </Border>
       <Border   x:Name="borderWorkSpaces" 
               Background="Aqua" Margin="3"
@@ -92,18 +94,7 @@
           ContentTemplate="{StaticResource WorkspacesTemplate}"
           Style="{StaticResource MainHCCStyle}"/>
       </Border>
-      <Border  x:Name="borderButtons" 
-               Background="Bisque" Margin="3"
-        Grid.Column="4" 
-        Style="{StaticResource MainBorderStyle}">
-        <HeaderedContentControl x:Name="hccButtons" 
-                                Header="Buttons"
-          Content="{Binding Workspaces, PresentationTraceSources.TraceLevel=Medium}"           
-          Style="{StaticResource MainHCCStyle}">
-
-        </HeaderedContentControl>
-
-      </Border>
+       
     </Grid>
   </DockPanel>
 </Window>

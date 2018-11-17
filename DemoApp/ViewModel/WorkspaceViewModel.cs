@@ -44,11 +44,11 @@ namespace DemoApp.ViewModel
 
         try
         {
-          Diag.UpdateLog(false, "(15) " + GetType().FullName + "; " + System.Reflection.MethodBase.GetCurrentMethod().Name + ";   ");
+          Diag.UpdateLog( "(15) " + GetType().FullName + ";\t" + System.Reflection.MethodBase.GetCurrentMethod().Name + ";\t");
         }
         catch (Exception ex)
         {
-          Diag.UpdateLog(false, "(15) " + GetType().FullName + "; " + System.Reflection.MethodBase.GetCurrentMethod().Name + ";   " + ex.Message);
+          Diag.UpdateLog( "(15) " + GetType().FullName + ";\t" + System.Reflection.MethodBase.GetCurrentMethod().Name + ";\t" + ex.Message);
         }
         return _closeCommand;
       }
@@ -67,11 +67,11 @@ namespace DemoApp.ViewModel
     {
       try
       {
-        Diag.UpdateLog(false, "(17) " + GetType().FullName + "; " + System.Reflection.MethodBase.GetCurrentMethod().Name + ";   ");
+        Diag.UpdateLog( "(17) " + GetType().FullName + ";\t" + System.Reflection.MethodBase.GetCurrentMethod().Name + ";\t");
       }
       catch (Exception ex)
       {
-        Diag.UpdateLog(false, "(17) " + GetType().FullName + "; " + System.Reflection.MethodBase.GetCurrentMethod().Name + ";   " + ex.Message);
+        Diag.UpdateLog( "(17) " + GetType().FullName + ";\t" + System.Reflection.MethodBase.GetCurrentMethod().Name + ";\t" + ex.Message);
       }
       WorkSpaceViewModelRequestClose?.Invoke(this, EventArgs.Empty);
     }

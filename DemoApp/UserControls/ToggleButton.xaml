@@ -49,7 +49,7 @@
                  VerticalAlignment="Center" 
                  Width="50" />
       <Button x:Name="t" Click="ToggleClick" Height="30" Width="30" Style="{DynamicResource ButtonStyle1}" 
-              Template="{DynamicResource MyToggleButtonTemplat}"     >B
+              Template="{DynamicResource MyToggleButtonTemplat}"     >Text
 
 
 

@@ -4,12 +4,12 @@ using System.IO;
 namespace DemoApp
 {
 
-  
+
   public static class Diag
   {
 
     public static string s = "";
-
+     
     [Conditional("DEBUG")]
     [DebuggerStepThrough]
     public static void DataBindingPresentation()
@@ -27,7 +27,7 @@ namespace DemoApp
 
 
     }
-     [Conditional("DEBUG")]
+    [Conditional("DEBUG")]
     [DebuggerStepThrough]
     public static void UpdateLog(bool DeleteContent, string Text)
     {
@@ -38,5 +38,14 @@ namespace DemoApp
       }
       File.AppendAllText(@"log.txt", Text + "\r\n");
     }
+
+     [Conditional("DEBUG")]
+    [DebuggerStepThrough]
+    public static void UpdateLog(  string Text)
+    {
+
+      UpdateLog(false, Text + "\r\n");
+    }
+
   }
 }

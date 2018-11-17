@@ -19,7 +19,7 @@ namespace DemoApp.UserControls
     private string itemSelecionado;
     private void NotificarPropriedadeAlterada(string propriedade)
     {
-      PropertyChanged(this, new PropertyChangedEventArgs(propriedade));
+      PropertyChanged.Invoke(this, new PropertyChangedEventArgs(propriedade));
     }
     private void btnListar_Click(object sender, RoutedEventArgs e)
     {

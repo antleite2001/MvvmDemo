@@ -35,7 +35,7 @@ namespace DemoApp.ViewModel
       }
 
       base.ViewModelBaseInstanceName = Strings.AllCustomersViewModel_DisplayName;
-
+      Diag.UpdateLog("(547865\tAllCustomersViewModel(C )\tbase.ViewModelBaseInstanceName \t" + base.ViewModelBaseInstanceName);
       _customerRepository = customerRepository;
 
       // Subscribe for notifications of when a new customer is saved.
@@ -54,6 +54,9 @@ namespace DemoApp.ViewModel
       foreach (CustomerViewModel cvm in all)
       {
         cvm.PropertyChanged += OnCustomerViewModelPropertyChanged;
+          Diag.UpdateLog("(521654)\tCreateAllCustomers()\t " + cvm.ToString() );
+
+        
       }
 
       AllCustomers = new ObservableCollection<CustomerViewModel>(all);
@@ -100,17 +103,19 @@ namespace DemoApp.ViewModel
     {
       if (e.NewItems != null && e.NewItems.Count != 0)
       {
-        foreach (CustomerViewModel custVM in e.NewItems)
+        foreach (CustomerViewModel cvm in e.NewItems)
         {
-          custVM.PropertyChanged += OnCustomerViewModelPropertyChanged;
+          cvm.PropertyChanged += OnCustomerViewModelPropertyChanged;
+          Diag.UpdateLog("(742342)\tOnCollectionChanged\te.NewItems\t" + cvm.ToString()+"\t"+e.NewItems.ToString());
         }
       }
 
       if (e.OldItems != null && e.OldItems.Count != 0)
       {
-        foreach (CustomerViewModel custVM in e.OldItems)
+        foreach (CustomerViewModel cvm in e.OldItems)
         {
-          custVM.PropertyChanged -= OnCustomerViewModelPropertyChanged;
+          cvm.PropertyChanged -= OnCustomerViewModelPropertyChanged;
+          Diag.UpdateLog("(742109)\tOnCollectionChanged\te.OldItems\t" + cvm.ToString()+"\t"+e.OldItems.ToString());
         }
       }
     }
@@ -128,6 +133,7 @@ namespace DemoApp.ViewModel
       // so that it will be queried again for a new value.
       if (e.PropertyName == IsSelected)
       {
+        
         OnPropertyChanged("TotalSelectedSales");
       }
     }

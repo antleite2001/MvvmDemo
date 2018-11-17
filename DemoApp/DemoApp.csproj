@@ -119,9 +119,6 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="RelayCommand.cs" />
-    <Compile Include="UserControls\ControleListagemDiretorio.xaml.cs">
-      <DependentUpon>ControleListagemDiretorio.xaml</DependentUpon>
-    </Compile>
     <Compile Include="UserControls\ToggleButton.xaml.cs">
       <DependentUpon>ToggleButton.xaml</DependentUpon>
     </Compile>
@@ -159,10 +156,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="MainWindowResources.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="UserControls\ControleListagemDiretorio.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

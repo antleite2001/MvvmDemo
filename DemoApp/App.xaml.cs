@@ -46,11 +46,11 @@ namespace DemoApp
       {
         try
         {
-          Diag.UpdateLog(false,  "(1) "+this.GetType().FullName + "; " +System.Reflection.MethodBase.GetCurrentMethod().Name);
+          Diag.UpdateLog(  "(1)\t"+this.GetType().FullName + ";\t" +System.Reflection.MethodBase.GetCurrentMethod().Name);
         }
         catch (Exception ex)
         {
-          Diag.UpdateLog(false,  "(1) "+this.GetType().FullName + "; " +System.Reflection.MethodBase.GetCurrentMethod().Name+ ";  " + ex.Message);
+          Diag.UpdateLog(  "(1)\t"+this.GetType().FullName + ";\t" +System.Reflection.MethodBase.GetCurrentMethod().Name+ ";\t" + ex.Message);
         }
 
         mainWindowViewModel.WorkSpaceViewModelRequestClose -= handler;

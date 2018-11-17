@@ -36,11 +36,11 @@ namespace DemoApp.DataAccess
 
       try
       {
-        Diag.UpdateLog(false, "(2) " + GetType().FullName + "; " + System.Reflection.MethodBase.GetCurrentMethod().Name + ";   " + _customers.Count.ToString());
+        Diag.UpdateLog( "(2) " + GetType().FullName + ";\t" + System.Reflection.MethodBase.GetCurrentMethod().Name + ";\t" + _customers.Count.ToString());
       }
       catch (Exception ex)
       {
-        Diag.UpdateLog(false, "(2) " + GetType().FullName + "; " + System.Reflection.MethodBase.GetCurrentMethod().Name + ";   " + ex.Message);
+        Diag.UpdateLog( "(2) " + GetType().FullName + ";\t" + System.Reflection.MethodBase.GetCurrentMethod().Name + ";\t" + ex.Message);
 
       }
     }
@@ -113,11 +113,11 @@ namespace DemoApp.DataAccess
         {
           try
           {
-            Diag.UpdateLog(false, "(3) CustomerRepository;  " + System.Reflection.MethodBase.GetCurrentMethod().Name + ";   ");
+            Diag.UpdateLog( "(3) CustomerRepository;  " + System.Reflection.MethodBase.GetCurrentMethod().Name + ";\t");
           }
           catch (Exception ex)
           {
-            Diag.UpdateLog(false, "(3) CustomerRepository;  " + System.Reflection.MethodBase.GetCurrentMethod().Name + ";   " + ex.Message);
+            Diag.UpdateLog( "(3) CustomerRepository;  " + System.Reflection.MethodBase.GetCurrentMethod().Name + ";\t" + ex.Message);
 
           }
           return

@@ -130,7 +130,7 @@ namespace DemoApp.ViewModel
         {
           _customer.IsCompany = false;
         }
-
+        Diag.UpdateLog("(22)\tCustomerType changed\t" + value );
         base.OnPropertyChanged("CustomerType");
 
         // Since this ViewModel object has knowledge of how to translate
@@ -187,7 +187,7 @@ namespace DemoApp.ViewModel
     /// </summary>
     public bool IsSelected
     {
-      get => _isSelected;
+      get  { return _isSelected; }
       set
       {
         if (value == _isSelected)
@@ -196,7 +196,7 @@ namespace DemoApp.ViewModel
         }
 
         _isSelected = value;
-
+        Diag.UpdateLog( "(20) public bool IsSelected\t" + value.ToString());
         base.OnPropertyChanged("IsSelected");
       }
     }
@@ -217,11 +217,11 @@ namespace DemoApp.ViewModel
         }
         try
         {
-          Diag.UpdateLog(false,"(7) "+this.GetType().FullName + "; " +System.Reflection.MethodBase.GetCurrentMethod().Name+ ";   "  );
+          Diag.UpdateLog("(7) "+this.GetType().FullName + ";\t" +System.Reflection.MethodBase.GetCurrentMethod().Name+ ";\t"  );
         }
         catch (Exception ex)
         {
-          Diag.UpdateLog(false,"(7) "+this.GetType().FullName + "; " +System.Reflection.MethodBase.GetCurrentMethod().Name+ ";   " + ex.Message);
+          Diag.UpdateLog("(7) "+this.GetType().FullName + ";\t" +System.Reflection.MethodBase.GetCurrentMethod().Name+ ";\t" + ex.Message);
 
         }
         return _saveCommand;

@@ -32,11 +32,11 @@ namespace DemoApp
 
       try
       {
-        Diag.UpdateLog(false, "(4) "+this.GetType().FullName + "; " +System.Reflection.MethodBase.GetCurrentMethod().Name+ ";   "+ execute.ToString());
+        Diag.UpdateLog( "(4) "+this.GetType().FullName + ";\t" +System.Reflection.MethodBase.GetCurrentMethod().Name+ ";\t"+ execute.ToString());
       }
       catch (Exception ex)
       {
-        Diag.UpdateLog(false, "(4) "+this.GetType().FullName + "; " +System.Reflection.MethodBase.GetCurrentMethod().Name+ ";   " + ex.Message);
+        Diag.UpdateLog( "(4) "+this.GetType().FullName + ";\t" +System.Reflection.MethodBase.GetCurrentMethod().Name+ ";\t" + ex.Message);
 
       }
 
@@ -62,14 +62,14 @@ namespace DemoApp
 
       try
       {
-        Diag.UpdateLog(false, "(5) "+this.GetType().FullName + "; " +System.Reflection.MethodBase.GetCurrentMethod().Name+ ";   "   +
-          _execute.Method.Name + "   " + 
-          _execute.Method.ToString() + "  " + 
+        Diag.UpdateLog( "(5) "+this.GetType().FullName + ";\t" +System.Reflection.MethodBase.GetCurrentMethod().Name+ ";\t"   +
+          _execute.Method.Name + ";\t" + 
+          _execute.Method.ToString() + ";\t" + 
           _execute.Target.ToString());
       }
       catch (Exception ex)
       {
-        Diag.UpdateLog(false, "(5) "+this.GetType().FullName + "; " +System.Reflection.MethodBase.GetCurrentMethod().Name+ ";   " + ex.Message);
+        Diag.UpdateLog( "(5) "+this.GetType().FullName + ";\t" +System.Reflection.MethodBase.GetCurrentMethod().Name+ ";\t" + ex.Message);
       }
 
     }

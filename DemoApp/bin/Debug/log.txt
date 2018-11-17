@@ -1,24 +1,125 @@
 --------------------------------------------------------------------------
-(3) CustomerRepository;  LoadCustomers;   
-(2) DemoApp.DataAccess.CustomerRepository; .ctor;   12
-(8) DemoApp.ViewModel.MainWindowViewModel; .ctor;   MVVM Demo App DemoApp.DataAccess.CustomerRepository
-(5) DemoApp.RelayCommand; .ctor;   <get_CloseCommand>b__3_0   Void <get_CloseCommand>b__3_0(System.Object)  DemoApp.ViewModel.MainWindowViewModel
-(4) DemoApp.RelayCommand; .ctor;   System.Action`1[System.Object]
-(15) DemoApp.ViewModel.MainWindowViewModel; get_CloseCommand;   
-(5) DemoApp.RelayCommand; .ctor;   <CreateControlPanelCommands>b__6_0   Void <CreateControlPanelCommands>b__6_0(System.Object)  DemoApp.ViewModel.MainWindowViewModel
-(4) DemoApp.RelayCommand; .ctor;   System.Action`1[System.Object]
-(6) DemoApp.ViewModel.CommandViewModel; .ctor;   View all customers  DemoApp.RelayCommand
-(5) DemoApp.RelayCommand; .ctor;   <CreateControlPanelCommands>b__6_1   Void <CreateControlPanelCommands>b__6_1(System.Object)  DemoApp.ViewModel.MainWindowViewModel
-(4) DemoApp.RelayCommand; .ctor;   System.Action`1[System.Object]
-(6) DemoApp.ViewModel.CommandViewModel; .ctor;   Create new customer  DemoApp.RelayCommand
-(5) DemoApp.RelayCommand; .ctor;   <CreateControlPanelCommands>b__6_2   Void <CreateControlPanelCommands>b__6_2(System.Object)  DemoApp.ViewModel.MainWindowViewModel
-(4) DemoApp.RelayCommand; .ctor;   System.Action`1[System.Object]
-(6) DemoApp.ViewModel.CommandViewModel; .ctor;   Exit  DemoApp.RelayCommand
-(12) DemoApp.ViewModel.MainWindowViewModel; CreateControlPanelCommands;   
-  View all customers
-  Create new customer
-  Exit
-(11) DemoApp.ViewModel.MainWindowViewModel; get_CreateROCControlPanelCommands;   3
-    View all customers
-    Create new customer
-    Exit
+(18)	ViewModelBase()	DemoApp.ViewModel.MainWindowViewModel
+
+(451289	MainWindowViewModel()	base.ViewModelBaseInstanceName 	MVVM Demo App
+
+(3) CustomerRepository;  LoadCustomers;	
+
+(2) DemoApp.DataAccess.CustomerRepository;	.ctor;	12
+
+(8) DemoApp.ViewModel.MainWindowViewModel;	.ctor;	MVVM Demo App;	DemoApp.DataAccess.CustomerRepository
+
+(5) DemoApp.RelayCommand;	.ctor;	<get_CloseCommand>b__3_0;	Void <get_CloseCommand>b__3_0(System.Object);	DemoApp.ViewModel.MainWindowViewModel
+
+(4) DemoApp.RelayCommand;	.ctor;	System.Action`1[System.Object]
+
+(15) DemoApp.ViewModel.MainWindowViewModel;	get_CloseCommand;	
+
+(5) DemoApp.RelayCommand;	.ctor;	<CreateControlPanelCommands>b__6_0;	Void <CreateControlPanelCommands>b__6_0(System.Object);	DemoApp.ViewModel.MainWindowViewModel
+
+(4) DemoApp.RelayCommand;	.ctor;	System.Action`1[System.Object]
+
+(18)	ViewModelBase()	DemoApp.ViewModel.CommandViewModel
+
+(789056	CommandViewModel( )	base.ViewModelBaseInstanceName 	View all customers
+
+(6)	DemoApp.ViewModel.CommandViewModel;	.ctor;	View all customers;	DemoApp.RelayCommand
+
+(5) DemoApp.RelayCommand;	.ctor;	<CreateControlPanelCommands>b__6_1;	Void <CreateControlPanelCommands>b__6_1(System.Object);	DemoApp.ViewModel.MainWindowViewModel
+
+(4) DemoApp.RelayCommand;	.ctor;	System.Action`1[System.Object]
+
+(18)	ViewModelBase()	DemoApp.ViewModel.CommandViewModel
+
+(789056	CommandViewModel( )	base.ViewModelBaseInstanceName 	Create new customer
+
+(6)	DemoApp.ViewModel.CommandViewModel;	.ctor;	Create new customer;	DemoApp.RelayCommand
+
+(5) DemoApp.RelayCommand;	.ctor;	<CreateControlPanelCommands>b__6_2;	Void <CreateControlPanelCommands>b__6_2(System.Object);	DemoApp.ViewModel.MainWindowViewModel
+
+(4) DemoApp.RelayCommand;	.ctor;	System.Action`1[System.Object]
+
+(18)	ViewModelBase()	DemoApp.ViewModel.CommandViewModel
+
+(789056	CommandViewModel( )	base.ViewModelBaseInstanceName 	Exit
+
+(6)	DemoApp.ViewModel.CommandViewModel;	.ctor;	Exit;	DemoApp.RelayCommand
+
+(12) DemoApp.ViewModel.MainWindowViewModel;	CreateControlPanelCommands;	
+
+	View all customers
+
+	Create new customer
+
+	Exit
+
+(11) DemoApp.ViewModel.MainWindowViewModel;	get_CreateROCControlPanelCommands;	3
+
+	View all customers
+
+	Create new customer
+
+	Exit
+
+(18)	ViewModelBase()	DemoApp.ViewModel.CustomerViewModel
+
+(5) DemoApp.RelayCommand;	.ctor;	<get_CloseCommand>b__3_0;	Void <get_CloseCommand>b__3_0(System.Object);	DemoApp.ViewModel.CustomerViewModel
+
+(4) DemoApp.RelayCommand;	.ctor;	System.Action`1[System.Object]
+
+(15) DemoApp.ViewModel.CustomerViewModel;	get_CloseCommand;	
+
+(5) DemoApp.RelayCommand;	.ctor;	<get_SaveCommand>b__31_0;	Void <get_SaveCommand>b__31_0(System.Object);	DemoApp.ViewModel.CustomerViewModel
+
+(7) DemoApp.ViewModel.CustomerViewModel;	get_SaveCommand;	
+
+(22)	CustomerType changed	Person
+
+(19) ViewModelBase():	CustomerType	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+(19) ViewModelBase():	LastName	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+(19) ViewModelBase():	FirstName	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+(19) ViewModelBase():	FirstName	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+(19) ViewModelBase():	FirstName	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+(19) ViewModelBase():	FirstName	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+(19) ViewModelBase():	LastName	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+(19) ViewModelBase():	LastName	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+(19) ViewModelBase():	LastName	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+(19) ViewModelBase():	LastName	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+(19) ViewModelBase():	Email	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+(19) ViewModelBase():	Email	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+(19) ViewModelBase():	Email	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+(19) ViewModelBase():	Email	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+(19) ViewModelBase():	Email	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+(19) ViewModelBase():	Email	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+(19) ViewModelBase():	Email	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+(19) ViewModelBase():	Email	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+(19) ViewModelBase():	Email	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+(19) ViewModelBase():	Email	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+(19) ViewModelBase():	Email	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+(19) ViewModelBase():	Email	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+(19) ViewModelBase():	Email	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+(19) ViewModelBase():	ViewModelBaseInstanceName	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+

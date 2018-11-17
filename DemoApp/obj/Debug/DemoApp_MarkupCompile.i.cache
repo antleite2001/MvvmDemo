@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\ACVL\Documents\WPF\MvvmDemoAppJoshSmith\MvvmDemoApp_1\DemoApp\App.xaml
-6-611116094
+5-1660645437
 
-211138981258
+201258608179
 121942473517
-MainWindow.xaml;MainWindowResources.xaml;UserControls\ControleListagemDiretorio.xaml;UserControls\ToggleButton.xaml;View\AllCustomersView.xaml;View\CustomerView.xaml;
+MainWindow.xaml;MainWindowResources.xaml;UserControls\ToggleButton.xaml;View\AllCustomersView.xaml;View\CustomerView.xaml;
 
-True
+False
 

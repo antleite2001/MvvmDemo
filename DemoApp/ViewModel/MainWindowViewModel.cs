@@ -35,19 +35,20 @@ namespace DemoApp.ViewModel
 
 
       base.ViewModelBaseInstanceName = Strings.MainWindowViewModel_DisplayName;
+      Diag.UpdateLog("(451289\tMainWindowViewModel()\tbase.ViewModelBaseInstanceName \t" + base.ViewModelBaseInstanceName);
 
       _customerRepository = new CustomerRepository(customerDataFile);
 
 
       try
       {
-        Diag.UpdateLog(false, "(8) " + GetType().FullName + "; " + System.Reflection.MethodBase.GetCurrentMethod().Name + ";   " +
-          base.ViewModelBaseInstanceName + " " +
+        Diag.UpdateLog("(8) " + GetType().FullName + ";\t" + System.Reflection.MethodBase.GetCurrentMethod().Name + ";\t" +
+          base.ViewModelBaseInstanceName + ";\t" +
           _customerRepository.ToString());
       }
       catch (Exception ex)
       {
-        Diag.UpdateLog(false, "(8) " + GetType().FullName + "; " + System.Reflection.MethodBase.GetCurrentMethod().Name + ";   " + ex.Message);
+        Diag.UpdateLog("(8) " + GetType().FullName + ";\t" + System.Reflection.MethodBase.GetCurrentMethod().Name + ";\t" + ex.Message);
 
       }
     }
@@ -79,16 +80,16 @@ namespace DemoApp.ViewModel
 
         try
         {
-          Diag.UpdateLog(false, "(11) " + GetType().FullName + "; " + System.Reflection.MethodBase.GetCurrentMethod().Name + ";   " + _commands.Count.ToString());
+          Diag.UpdateLog("(11) " + GetType().FullName + ";\t" + System.Reflection.MethodBase.GetCurrentMethod().Name + ";\t" + _commands.Count.ToString());
           foreach (CommandViewModel c in _commands)
           {
-            Diag.UpdateLog(false, "    " + c.ViewModelBaseInstanceName);
+            Diag.UpdateLog("\t" + c.ViewModelBaseInstanceName);
           }
 
         }
         catch (Exception ex)
         {
-          Diag.UpdateLog(false, "(11) " + GetType().FullName + "; " + System.Reflection.MethodBase.GetCurrentMethod().Name + ";   " + ex.Message);
+          Diag.UpdateLog("(11) " + GetType().FullName + ";\t" + System.Reflection.MethodBase.GetCurrentMethod().Name + ";\t" + ex.Message);
         }
         return _commands;
       }
@@ -114,15 +115,15 @@ namespace DemoApp.ViewModel
 
       try
       {
-        Diag.UpdateLog(false, "(12) " + GetType().FullName + "; " + System.Reflection.MethodBase.GetCurrentMethod().Name + ";   ");
+        Diag.UpdateLog("(12) " + GetType().FullName + ";\t" + System.Reflection.MethodBase.GetCurrentMethod().Name + ";\t");
         foreach (CommandViewModel c in m)
         {
-          Diag.UpdateLog(false, "  " + c.ViewModelBaseInstanceName);
+          Diag.UpdateLog("\t" + c.ViewModelBaseInstanceName);
         }
       }
       catch (Exception ex)
       {
-        Diag.UpdateLog(false, "(12) " + GetType().FullName + "; " + System.Reflection.MethodBase.GetCurrentMethod().Name + ";   " + ex.Message);
+        Diag.UpdateLog("(12) " + GetType().FullName + ";\t" + System.Reflection.MethodBase.GetCurrentMethod().Name + ";\t" + ex.Message);
 
       }
 
@@ -147,11 +148,11 @@ namespace DemoApp.ViewModel
     {
       try
       {
-        Diag.UpdateLog(false, "(13) " + GetType().FullName + "; " + System.Reflection.MethodBase.GetCurrentMethod().Name);
+        Diag.UpdateLog("(13) " + GetType().FullName + ";\t" + System.Reflection.MethodBase.GetCurrentMethod().Name);
       }
       catch (Exception ex)
       {
-        Diag.UpdateLog(false, "(13) " + GetType().FullName + "; " + System.Reflection.MethodBase.GetCurrentMethod().Name + ";   " + ex.Message);
+        Diag.UpdateLog("(13) " + GetType().FullName + ";\t" + System.Reflection.MethodBase.GetCurrentMethod().Name + ";\t" + ex.Message);
       }
       MainWindowViewModelRequestClose?.Invoke(this, EventArgs.Empty);
     }
