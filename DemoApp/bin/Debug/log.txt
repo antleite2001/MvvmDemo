@@ -1,125 +1,955 @@
---------------------------------------------------------------------------
-(18)	ViewModelBase()	DemoApp.ViewModel.MainWindowViewModel
+7:24 PM	--------------------------------------------------------------------------
+7:24 PM	(18)	ViewModelBase()	DemoApp.ViewModel.MainWindowViewModel
 
-(451289	MainWindowViewModel()	base.ViewModelBaseInstanceName 	MVVM Demo App
+7:24 PM	(451289)	MainWindowViewModel()	base.ViewModelBaseInstanceName	MVVM Demo App
 
-(3) CustomerRepository;  LoadCustomers;	
+7:24 PM	(3) CustomerRepository;  LoadCustomers;	
 
-(2) DemoApp.DataAccess.CustomerRepository;	.ctor;	12
+7:24 PM	(2) DemoApp.DataAccess.CustomerRepository;	.ctor;	12
 
-(8) DemoApp.ViewModel.MainWindowViewModel;	.ctor;	MVVM Demo App;	DemoApp.DataAccess.CustomerRepository
+7:24 PM	(8)	DemoApp.ViewModel.MainWindowViewModel;	.ctor;	MVVM Demo App;	DemoApp.DataAccess.CustomerRepository
 
-(5) DemoApp.RelayCommand;	.ctor;	<get_CloseCommand>b__3_0;	Void <get_CloseCommand>b__3_0(System.Object);	DemoApp.ViewModel.MainWindowViewModel
+7:24 PM	(5) DemoApp.RelayCommand;	.ctor;	<get_CloseCommand>b__3_0;	Void <get_CloseCommand>b__3_0(System.Object);	DemoApp.ViewModel.MainWindowViewModel
 
-(4) DemoApp.RelayCommand;	.ctor;	System.Action`1[System.Object]
+7:24 PM	(4) DemoApp.RelayCommand;	.ctor;	System.Action`1[System.Object]
 
-(15) DemoApp.ViewModel.MainWindowViewModel;	get_CloseCommand;	
+7:24 PM	(15) DemoApp.ViewModel.MainWindowViewModel;	get_CloseCommand;	
 
-(5) DemoApp.RelayCommand;	.ctor;	<CreateControlPanelCommands>b__6_0;	Void <CreateControlPanelCommands>b__6_0(System.Object);	DemoApp.ViewModel.MainWindowViewModel
+7:24 PM	(5) DemoApp.RelayCommand;	.ctor;	<CreateControlPanelCommands>b__6_0;	Void <CreateControlPanelCommands>b__6_0(System.Object);	DemoApp.ViewModel.MainWindowViewModel
 
-(4) DemoApp.RelayCommand;	.ctor;	System.Action`1[System.Object]
+7:24 PM	(4) DemoApp.RelayCommand;	.ctor;	System.Action`1[System.Object]
 
-(18)	ViewModelBase()	DemoApp.ViewModel.CommandViewModel
+7:24 PM	(18)	ViewModelBase()	DemoApp.ViewModel.CommandViewModel
 
-(789056	CommandViewModel( )	base.ViewModelBaseInstanceName 	View all customers
+7:24 PM	(789056	CommandViewModel( )	base.ViewModelBaseInstanceName 	View all customers
 
-(6)	DemoApp.ViewModel.CommandViewModel;	.ctor;	View all customers;	DemoApp.RelayCommand
+7:24 PM	(6)	DemoApp.ViewModel.CommandViewModel;	.ctor;	View all customers;	DemoApp.RelayCommand
 
-(5) DemoApp.RelayCommand;	.ctor;	<CreateControlPanelCommands>b__6_1;	Void <CreateControlPanelCommands>b__6_1(System.Object);	DemoApp.ViewModel.MainWindowViewModel
+7:24 PM	(5) DemoApp.RelayCommand;	.ctor;	<CreateControlPanelCommands>b__6_1;	Void <CreateControlPanelCommands>b__6_1(System.Object);	DemoApp.ViewModel.MainWindowViewModel
 
-(4) DemoApp.RelayCommand;	.ctor;	System.Action`1[System.Object]
+7:24 PM	(4) DemoApp.RelayCommand;	.ctor;	System.Action`1[System.Object]
 
-(18)	ViewModelBase()	DemoApp.ViewModel.CommandViewModel
+7:24 PM	(18)	ViewModelBase()	DemoApp.ViewModel.CommandViewModel
 
-(789056	CommandViewModel( )	base.ViewModelBaseInstanceName 	Create new customer
+7:24 PM	(789056	CommandViewModel( )	base.ViewModelBaseInstanceName 	Create new customer
 
-(6)	DemoApp.ViewModel.CommandViewModel;	.ctor;	Create new customer;	DemoApp.RelayCommand
+7:24 PM	(6)	DemoApp.ViewModel.CommandViewModel;	.ctor;	Create new customer;	DemoApp.RelayCommand
 
-(5) DemoApp.RelayCommand;	.ctor;	<CreateControlPanelCommands>b__6_2;	Void <CreateControlPanelCommands>b__6_2(System.Object);	DemoApp.ViewModel.MainWindowViewModel
+7:24 PM	(5) DemoApp.RelayCommand;	.ctor;	<CreateControlPanelCommands>b__6_2;	Void <CreateControlPanelCommands>b__6_2(System.Object);	DemoApp.ViewModel.MainWindowViewModel
 
-(4) DemoApp.RelayCommand;	.ctor;	System.Action`1[System.Object]
+7:24 PM	(4) DemoApp.RelayCommand;	.ctor;	System.Action`1[System.Object]
 
-(18)	ViewModelBase()	DemoApp.ViewModel.CommandViewModel
+7:24 PM	(18)	ViewModelBase()	DemoApp.ViewModel.CommandViewModel
 
-(789056	CommandViewModel( )	base.ViewModelBaseInstanceName 	Exit
+7:24 PM	(789056	CommandViewModel( )	base.ViewModelBaseInstanceName 	Exit
 
-(6)	DemoApp.ViewModel.CommandViewModel;	.ctor;	Exit;	DemoApp.RelayCommand
+7:24 PM	(6)	DemoApp.ViewModel.CommandViewModel;	.ctor;	Exit;	DemoApp.RelayCommand
 
-(12) DemoApp.ViewModel.MainWindowViewModel;	CreateControlPanelCommands;	
+7:24 PM	(12) DemoApp.ViewModel.MainWindowViewModel;	CreateControlPanelCommands;	
 
-	View all customers
+7:24 PM		View all customers
 
-	Create new customer
+7:24 PM		Create new customer
 
-	Exit
+7:24 PM		Exit
 
-(11) DemoApp.ViewModel.MainWindowViewModel;	get_CreateROCControlPanelCommands;	3
+7:24 PM	(11) DemoApp.ViewModel.MainWindowViewModel;	get_CreateROCControlPanelCommands;	3
 
-	View all customers
+7:24 PM		View all customers
 
-	Create new customer
+7:24 PM		Create new customer
 
-	Exit
+7:24 PM		Exit
 
-(18)	ViewModelBase()	DemoApp.ViewModel.CustomerViewModel
+7:24 PM	(5) DemoApp.RelayCommand;	.ctor;	<get_ToggleButtonClicked>b__21_0;	Void <get_ToggleButtonClicked>b__21_0(System.Object);	DemoApp.ViewModel.MainWindowViewModel
 
-(5) DemoApp.RelayCommand;	.ctor;	<get_CloseCommand>b__3_0;	Void <get_CloseCommand>b__3_0(System.Object);	DemoApp.ViewModel.CustomerViewModel
+7:24 PM	(4) DemoApp.RelayCommand;	.ctor;	System.Action`1[System.Object]
 
-(4) DemoApp.RelayCommand;	.ctor;	System.Action`1[System.Object]
+7:24 PM	(450154) DemoApp.ViewModel.MainWindowViewModel;	get_ToggleButtonClicked;	
 
-(15) DemoApp.ViewModel.CustomerViewModel;	get_CloseCommand;	
+7:24 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
 
-(5) DemoApp.RelayCommand;	.ctor;	<get_SaveCommand>b__31_0;	Void <get_SaveCommand>b__31_0(System.Object);	DemoApp.ViewModel.CustomerViewModel
+7:24 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
 
-(7) DemoApp.ViewModel.CustomerViewModel;	get_SaveCommand;	
+7:24 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
 
-(22)	CustomerType changed	Person
+7:24 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
 
-(19) ViewModelBase():	CustomerType	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+7:24 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
 
-(19) ViewModelBase():	LastName	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+7:24 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
 
-(19) ViewModelBase():	FirstName	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+7:24 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
 
-(19) ViewModelBase():	FirstName	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+7:24 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
 
-(19) ViewModelBase():	FirstName	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+7:24 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
 
-(19) ViewModelBase():	FirstName	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+7:24 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
 
-(19) ViewModelBase():	LastName	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+7:24 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
 
-(19) ViewModelBase():	LastName	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+7:24 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
 
-(19) ViewModelBase():	LastName	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+7:24 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
 
-(19) ViewModelBase():	LastName	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+7:24 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
 
-(19) ViewModelBase():	Email	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+7:24 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
 
-(19) ViewModelBase():	Email	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+7:24 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
 
-(19) ViewModelBase():	Email	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+7:24 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
 
-(19) ViewModelBase():	Email	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+7:24 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
 
-(19) ViewModelBase():	Email	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+7:24 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
 
-(19) ViewModelBase():	Email	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+7:24 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
 
-(19) ViewModelBase():	Email	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+7:24 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
 
-(19) ViewModelBase():	Email	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+7:24 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
 
-(19) ViewModelBase():	Email	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+7:24 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
 
-(19) ViewModelBase():	Email	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+7:24 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
 
-(19) ViewModelBase():	Email	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+7:24 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
 
-(19) ViewModelBase():	Email	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+7:24 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
 
-(19) ViewModelBase():	Email	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+7:24 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
 
-(19) ViewModelBase():	ViewModelBaseInstanceName	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+7:24 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(341567) Relay Command Execute()	DemoApp.RelayCommand
+
+7:24 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(341567) Relay Command Execute()	DemoApp.RelayCommand
+
+7:24 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:24 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(341567) Relay Command Execute()	DemoApp.RelayCommand
+
+7:25 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(341567) Relay Command Execute()	DemoApp.RelayCommand
+
+7:25 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(341567) Relay Command Execute()	DemoApp.RelayCommand
+
+7:25 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(341567) Relay Command Execute()	DemoApp.RelayCommand
+
+7:25 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(341567) Relay Command Execute()	DemoApp.RelayCommand
+
+7:25 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(341567) Relay Command Execute()	DemoApp.RelayCommand
+
+7:25 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(341567) Relay Command Execute()	DemoApp.RelayCommand
+
+7:25 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(341567) Relay Command Execute()	DemoApp.RelayCommand
+
+7:25 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(341567) Relay Command Execute()	DemoApp.RelayCommand
+
+7:25 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(341567) Relay Command Execute()	DemoApp.RelayCommand
+
+7:25 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(341567) Relay Command Execute()	DemoApp.RelayCommand
+
+7:25 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(341567) Relay Command Execute()	DemoApp.RelayCommand
+
+7:25 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(341567) Relay Command Execute()	DemoApp.RelayCommand
+
+7:25 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(341567) Relay Command Execute()	DemoApp.RelayCommand
+
+7:25 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(341567) Relay Command Execute()	DemoApp.RelayCommand
+
+7:25 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(341567) Relay Command Execute()	DemoApp.RelayCommand
+
+7:25 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(341567) Relay Command Execute()	DemoApp.RelayCommand
+
+7:25 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(590213) DemoApp.ViewModel.MainWindowViewModel;	OnToggleButtonClicked;	
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonPosition	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonMargins	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
+
+7:25 PM	(19) ViewModelBase():	ToggleButtonColor	Void OnPropertyChanged(System.Object, System.ComponentModel.PropertyChangedEventArgs)	System.ComponentModel.PropertyChangedEventManager
 

@@ -9,14 +9,14 @@ using System.ComponentModel;
 using System.Diagnostics;
 using System.Linq;
 using System.Windows.Data;
-
+using System.Windows.Input;
 
 namespace DemoApp.ViewModel
 {
   /// <summary>
   /// The ViewModel for the application's main window.
   /// </summary>
-  public class MainWindowViewModel : WorkspaceViewModel
+  public class MainWindowViewModel : ToggleButtonViewModel
   {
     #region Fields
 
@@ -35,20 +35,22 @@ namespace DemoApp.ViewModel
 
 
       base.ViewModelBaseInstanceName = Strings.MainWindowViewModel_DisplayName;
-      Diag.UpdateLog("(451289\tMainWindowViewModel()\tbase.ViewModelBaseInstanceName \t" + base.ViewModelBaseInstanceName);
+      Diag.UpdateLog("(451289)\tMainWindowViewModel()\tbase.ViewModelBaseInstanceName\t" + 
+        base.ViewModelBaseInstanceName);
 
       _customerRepository = new CustomerRepository(customerDataFile);
-
+       
 
       try
       {
-        Diag.UpdateLog("(8) " + GetType().FullName + ";\t" + System.Reflection.MethodBase.GetCurrentMethod().Name + ";\t" +
+        Diag.UpdateLog("(8)\t" + GetType().FullName + ";\t" + 
+          System.Reflection.MethodBase.GetCurrentMethod().Name + ";\t" +
           base.ViewModelBaseInstanceName + ";\t" +
           _customerRepository.ToString());
       }
       catch (Exception ex)
       {
-        Diag.UpdateLog("(8) " + GetType().FullName + ";\t" + System.Reflection.MethodBase.GetCurrentMethod().Name + ";\t" + ex.Message);
+        Diag.UpdateLog("(8)\t" + GetType().FullName + ";\t" + System.Reflection.MethodBase.GetCurrentMethod().Name + ";\t" + ex.Message);
 
       }
     }
@@ -154,10 +156,14 @@ namespace DemoApp.ViewModel
       {
         Diag.UpdateLog("(13) " + GetType().FullName + ";\t" + System.Reflection.MethodBase.GetCurrentMethod().Name + ";\t" + ex.Message);
       }
-      MainWindowViewModelRequestClose?.Invoke(this, EventArgs.Empty);
+      if (MainWindowViewModelRequestClose != null)
+      {
+        MainWindowViewModelRequestClose.Invoke(this, EventArgs.Empty);
+      }
+
     }
 
-    #endregion // RequestClose [event]
+    #endregion   RequestClose [event]
 
 
 
@@ -189,7 +195,7 @@ namespace DemoApp.ViewModel
       {
         foreach (WorkspaceViewModel workspace in e.NewItems)
         {
-          workspace.WorkSpaceViewModelRequestClose += OnWorkspaceRequestClose;
+          workspace.WSVMRequestClose += OnWorkspaceRequestClose;
         }
       }
 
@@ -197,7 +203,7 @@ namespace DemoApp.ViewModel
       {
         foreach (WorkspaceViewModel workspace in e.OldItems)
         {
-          workspace.WorkSpaceViewModelRequestClose -= OnWorkspaceRequestClose;
+          workspace.WSVMRequestClose -= OnWorkspaceRequestClose;
         }
       }
     }
@@ -209,7 +215,7 @@ namespace DemoApp.ViewModel
       Workspaces.Remove(workspace);
     }
 
-    #endregion // Workspaces
+    #endregion Workspaces
 
     #region Private Helpers
 
@@ -249,6 +255,6 @@ namespace DemoApp.ViewModel
       }
     }
 
-    #endregion // Private Helpers
+    #endregion Private Helpers
   }
 }

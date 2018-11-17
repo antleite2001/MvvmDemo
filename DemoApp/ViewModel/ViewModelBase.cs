@@ -9,7 +9,7 @@ namespace DemoApp.ViewModel
   /// It provides support for property change notifications 
   /// and has a DisplayName property.  This class is abstract.
   /// </summary>
-  public abstract class ViewModelBase : INotifyPropertyChanged, IDisposable
+  public abstract class ViewModelBase : INotifyPropertyChanged, IDisposable, IViewModelBase
   {
     #region Constructor
 
@@ -18,7 +18,7 @@ namespace DemoApp.ViewModel
       Diag.UpdateLog( "(18)\tViewModelBase()\t"+this.GetType().FullName  );
     }
 
-    #endregion // Constructor
+    #endregion Constructor
 
     #region DisplayName
 
@@ -29,7 +29,7 @@ namespace DemoApp.ViewModel
     /// </summary>
     public virtual string ViewModelBaseInstanceName { get; protected set; }
 
-    #endregion // DisplayName
+    #endregion DisplayName
 
     #region Debugging Aides
 
@@ -38,8 +38,8 @@ namespace DemoApp.ViewModel
     /// a public property with the specified name. This 
     /// method does not exist in a Release build.
     /// </summary>
-    [Conditional("DEBUG")]
-    [DebuggerStepThrough]
+    //[Conditional("DEBUG")]
+    //[DebuggerStepThrough]
     public void VerifyPropertyName(string propertyName)
     {
       // Verify that the property name matches a real,  
@@ -125,6 +125,6 @@ namespace DemoApp.ViewModel
     }
 #endif
 
-    #endregion // IDisposable Members
+    #endregion IDisposable Members
   }
 }

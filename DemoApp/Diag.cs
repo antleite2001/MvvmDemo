@@ -1,4 +1,5 @@
-﻿using System.Diagnostics;
+﻿using System;
+using System.Diagnostics;
 using System.IO;
 
 namespace DemoApp
@@ -36,7 +37,7 @@ namespace DemoApp
       {
         File.Delete(@"log.txt");
       }
-      File.AppendAllText(@"log.txt", Text + "\r\n");
+      File.AppendAllText(@"log.txt",DateTime.Now.ToShortTimeString() + "\t"+ Text + "\r\n");
     }
 
      [Conditional("DEBUG")]

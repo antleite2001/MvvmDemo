@@ -81,9 +81,21 @@ namespace DemoApp.Model
 
     #region IDataErrorInfo Members
 
-    string IDataErrorInfo.Error => null;
+    string IDataErrorInfo.Error
+    {
+      get
+      {
+        return null;
+      }
+    }
 
-    string IDataErrorInfo.this[string propertyName] => GetValidationError(propertyName);
+    string IDataErrorInfo.this[string propertyName]
+    {
+      get
+      {
+        return GetValidationError(propertyName);
+      }
+    }
 
     #endregion // IDataErrorInfo Members
 

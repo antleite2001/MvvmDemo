@@ -2,8 +2,8 @@
 using System;
 using System.Globalization;
 using System.Windows;
+using System.Windows.Input;
 using System.Windows.Markup;
-
 namespace DemoApp
 {
   public partial class App : Application
@@ -31,43 +31,78 @@ namespace DemoApp
     {
       base.OnStartup(e);
 
-      MainWindow window = new MainWindow();
-
+      MainWindow _mainWindow = new MainWindow();
       // Create the ViewModel to which 
-      // the main window binds.
+      // the main _mainWindow binds.
       string path = "Data/customers.xml";
 
-      MainWindowViewModel mainWindowViewModel = new MainWindowViewModel(path);
+      MainWindowViewModel _mainWindowViewModel = new MainWindowViewModel(path);
+
+
+
+
+      #region MainWindow KeyDown
+      //Delegate to handle KeyDown events-----------------------
+      KeyEventHandler KeyDown = delegate (object sender, KeyEventArgs arg)
+      {
+        if (arg.Key == Key.F4)
+        {
+          _mainWindowViewModel.OnToggleButtonClicked();
+        }
+      };
+
+      //Hook to capture KeyDown events
+      _mainWindow.KeyDown += KeyDown;
+
+      #endregion MainWindow KeyDown
+
+
+
+
 
       // When the ViewModel asks to be closed, 
-      // close the window.
+      // close the _mainWindow.
       EventHandler handler = null;
-      handler = delegate
+      handler=delegate
       {
         try
         {
-          Diag.UpdateLog(  "(1)\t"+this.GetType().FullName + ";\t" +System.Reflection.MethodBase.GetCurrentMethod().Name);
+          Diag.UpdateLog("(1)\t" + GetType().FullName + ";\t" + System.Reflection.MethodBase.GetCurrentMethod().Name);
         }
         catch (Exception ex)
         {
-          Diag.UpdateLog(  "(1)\t"+this.GetType().FullName + ";\t" +System.Reflection.MethodBase.GetCurrentMethod().Name+ ";\t" + ex.Message);
+          Diag.UpdateLog("(1)\t" + GetType().FullName + ";\t" + System.Reflection.MethodBase.GetCurrentMethod().Name + ";\t" + ex.Message);
         }
 
-        mainWindowViewModel.WorkSpaceViewModelRequestClose -= handler;
-        mainWindowViewModel.MainWindowViewModelRequestClose -= handler;
-        window.Close();
+        _mainWindowViewModel.WSVMRequestClose -= handler;
+        _mainWindowViewModel.MainWindowViewModelRequestClose -= handler;
+        _mainWindow.KeyDown -= KeyDown;
+        _mainWindow.Close();
       };
 
-      mainWindowViewModel.WorkSpaceViewModelRequestClose += handler;
-      mainWindowViewModel.MainWindowViewModelRequestClose += handler;
+      _mainWindowViewModel.WSVMRequestClose += handler;
+      _mainWindowViewModel.MainWindowViewModelRequestClose += handler;
 
-      // Allow all controls in the window to 
+
+
+
+
+      // Allow all controls in the _mainWindow to 
       // bind to the ViewModel by setting the 
       // DataContext, which propagates down 
       // the element tree.
-      window.DataContext = mainWindowViewModel;
+      _mainWindow.DataContext = _mainWindowViewModel;
 
-      window.Show();
+      _mainWindow.Show();
     }
+
+    //private void KeyDown(object sender, System.Windows.Input.KeyEventArgs e)
+    //  {
+    //  if (e.Key == System.Windows.Input.Key.F4)
+    //  {
+    //    _mainWindowViewModel.OnToggleButtonClicked();
+    //  }
+    //  }
+
   }
 }

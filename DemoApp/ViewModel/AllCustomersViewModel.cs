@@ -75,9 +75,14 @@ namespace DemoApp.ViewModel
     /// <summary>
     /// Returns the total sales sum of all selected customers.
     /// </summary>
-    public double TotalSelectedSales => AllCustomers.Sum(
+    public double TotalSelectedSales
+    {
+      get
+      {
+        return AllCustomers.Sum(
                 custVM => custVM.IsSelected ? custVM.TotalSales : 0.0);
-
+      }
+    }
     #endregion // Public Interface
 
     #region  Base Class Overrides

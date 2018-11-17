@@ -93,6 +93,7 @@ namespace DemoApp
     //[DebuggerStepThrough]
     public void Execute(object parameter)
     {
+      Diag.UpdateLog("(341567) Relay Command Execute()\t" + this.ToString());
       _execute.Invoke(parameter);
     }
 

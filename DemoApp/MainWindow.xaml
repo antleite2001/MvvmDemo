@@ -5,17 +5,17 @@
   xmlns:vm="clr-namespace:DemoApp.ViewModel"
   xmlns:diag="clr-namespace:System.Diagnostics;assembly=WindowsBase"
   xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:View="clr-namespace:DemoApp.View" mc:Ignorable="d" 
-  xmlns:uc="clr-namespace:DemoApp.UserControls"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+  xmlns:View="clr-namespace:DemoApp.View" mc:Ignorable="d" 
   x:Class="DemoApp.MainWindow"
     
   FontSize="13" 
   FontFamily="Verdana"
   MinWidth="650" MinHeight="420"
   
-  Title="{Binding ViewModelBaseInstanceName, FallbackValue=Error: Title Binding Wrong Value, Mode=OneTime, TargetNullValue=Error: Title Binding Wrong Value, PresentationTraceSources.TraceLevel=High, UpdateSourceTrigger=PropertyChanged}"  
+  Title="{Binding ViewModelBaseInstanceName, FallbackValue=FallbackValue: Binding Wrong Value, Mode=OneTime, TargetNullValue=TargetNullValue: Binding Wrong Value, PresentationTraceSources.TraceLevel=High, UpdateSourceTrigger=PropertyChanged}"  
   Width="1200" Height="440"
-  WindowStartupLocation="CenterScreen" Background="#FFA43434"
+  WindowStartupLocation="CenterScreen" Background="#FFA43434"  
   >
 
 
@@ -62,13 +62,25 @@
 
       </Border>
       <Border x:Name="border1" 
-              Height="60"  Width="100" Background="Purple"
-              Grid.Column="1" >
-        <Grid>
-            <Rectangle x:Name="Back" HorizontalAlignment="Center" Height="56" Width="96" VerticalAlignment="Center"   Margin="2,2,2,2" 
-                      RadiusY="29" RadiusX="29"  Fill="#FFA0A0A0"/>
-            <Ellipse x:Name="dot" Fill="White"  HorizontalAlignment="Center" Height="50" VerticalAlignment="Center" Width="50" />
-          <Button x:Name="t" Content ="Text"   Height="30" Width="30"     >
+              Height="60"  Width="100"  
+              Grid.Column="1" Focusable="False">
+        <Grid Focusable="False">
+          
+          <Rectangle Focusable="False" x:Name="Back" HorizontalAlignment="Center" Height="56" Width="96" VerticalAlignment="Center"   Margin="2,2,2,2" 
+                      RadiusY="29" RadiusX="29"  
+                       Fill="{Binding ToggleButtonColor, FallbackValue='Green'}"/>
+          
+          <Ellipse Focusable="False" x:Name="dot" Fill="White"  
+                     HorizontalAlignment="{Binding ToggleButtonPosition, FallbackValue=Left}" 
+                     Height="40" VerticalAlignment="Center" Width="40"
+                     Margin="{Binding  ToggleButtonMargins, FallbackValue='10,0,0,0'}" />
+
+          <Button Focusable="False" x:Name="toggleButton"   FontSize="10"    
+                  Style="{DynamicResource ButtonStyle2}"  
+                  Command="{Binding ToggleButtonClicked, 
+                          Mode=OneTime, 
+                          PresentationTraceSources.TraceLevel=High, 
+                          UpdateSourceTrigger=PropertyChanged}">
 
           </Button>
         </Grid>

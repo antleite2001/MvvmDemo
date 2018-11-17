@@ -49,9 +49,12 @@ namespace DemoApp.ViewModel
 
     #region Customer Properties
 
+
+
+
     public string Email
     {
-      get => _customer.Email;
+      get { return _customer.Email; }
       set
       {
         if (value == _customer.Email)
@@ -67,7 +70,7 @@ namespace DemoApp.ViewModel
 
     public string FirstName
     {
-      get => _customer.FirstName;
+      get { return _customer.FirstName; }
       set
       {
         if (value == _customer.FirstName)
@@ -81,11 +84,17 @@ namespace DemoApp.ViewModel
       }
     }
 
-    public bool IsCompany => _customer.IsCompany;
+    public bool IsCompany
+    {
+      get
+      {
+        return _customer.IsCompany;
+      }
+    }
 
     public string LastName
     {
-      get => _customer.LastName;
+      get { return _customer.LastName; }
       set
       {
         if (value == _customer.LastName)
@@ -99,7 +108,12 @@ namespace DemoApp.ViewModel
       }
     }
 
-    public double TotalSales => _customer.TotalSales;
+    public double TotalSales {
+      get
+      {
+        return _customer.TotalSales;
+      }
+    }
 
     #endregion // Customer Properties
 
@@ -112,7 +126,7 @@ namespace DemoApp.ViewModel
     /// </summary>
     public string CustomerType
     {
-      get => _customerType;
+      get { return _customerType; }
       set
       {
         if (value == _customerType || string.IsNullOrEmpty(value))
@@ -258,18 +272,35 @@ namespace DemoApp.ViewModel
     /// Returns true if this customer was created by the user and it has not yet
     /// been saved to the customer repository.
     /// </summary>
-    private bool IsNewCustomer => !_customerRepository.ContainsCustomer(_customer);
+    private bool IsNewCustomer
+    {
+      get
+      {
+        return !_customerRepository.ContainsCustomer(_customer);
+      }
+    }
 
     /// <summary>
     /// Returns true if the customer is valid and can be saved.
     /// </summary>
-    private bool CanSave => string.IsNullOrEmpty(ValidateCustomerType()) && _customer.IsValid;
-
+    private bool CanSave
+    {
+      get
+      {
+        return string.IsNullOrEmpty(ValidateCustomerType()) && _customer.IsValid;
+      }
+    }
     #endregion // Private Helpers
 
     #region IDataErrorInfo Members
 
-    string IDataErrorInfo.Error => (_customer as IDataErrorInfo).Error;
+    string IDataErrorInfo.Error
+    {
+      get
+      {
+        return (_customer as IDataErrorInfo).Error;
+      }
+    }
 
     string IDataErrorInfo.this[string propertyName]
     {
